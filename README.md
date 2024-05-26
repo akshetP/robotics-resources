@@ -55,7 +55,9 @@ A complete library of resources that caters to all levels of Roboticists.
 - [Self-Driving Cars with ROS 2 & Autoware](https://www.youtube.com/playlist?list=PLL57Sz4fhxLpCXgN0lvCF7aHAlRA5FoFr)
 - [ROS2 Tutorials](https://www.youtube.com/playlist?list=PLNw2RD-1J5YZbyWXCpas9zPJldfphPi4Q)
 
-**6. YouTube Channels to Learn Robotics**
+**6. YouTube Channels/Playlists to Learn Robotics**
+
+***Channels***
 - [Duckietown](https://www.youtube.com/@duckietown)
 - [LearnRobotics by Liz Miller](https://www.youtube.com/@LearnRobotics)
 - [aniskoubaa2327 by Anis Koubaa](https://www.youtube.com/@aniskoubaa2327)
@@ -66,6 +68,9 @@ A complete library of resources that caters to all levels of Roboticists.
 - [Mecharithm - Robotics and Mechatronics](https://www.youtube.com/@mecharithm-robotics)
 - [Robomechtrix](https://www.youtube.com/@ROBOMECHTRIX)
 - [RoboticsBackEnd](https://www.youtube.com/@RoboticsBackEnd)
+
+***Playlists***
+- [Robotics 501: Mathematics for Robotics](https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH)
 
 **7. Books to learn Robotics**
 - [ROS Robotics by Example](https://sceweb.sce.uhcl.edu/harman/CENG5437_MobileRobots/Webitems2020/ROS_ROBOTICS_BY_EXAMPLE_SECOND_EDITION.pdf)
