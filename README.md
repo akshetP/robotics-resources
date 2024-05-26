@@ -71,6 +71,7 @@ A complete library of resources that caters to all levels of Roboticists.
 
 ***Playlists***
 - [Robotics 501: Mathematics for Robotics](https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH)
+- [Introduction to Robotics](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_XM9cvjLLO_Azt1FkgPhpH)
 
 **7. Books to learn Robotics**
 - [ROS Robotics by Example](https://sceweb.sce.uhcl.edu/harman/CENG5437_MobileRobots/Webitems2020/ROS_ROBOTICS_BY_EXAMPLE_SECOND_EDITION.pdf)
