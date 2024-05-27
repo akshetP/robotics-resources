@@ -12,14 +12,23 @@ A complete library of resources that caters to all levels of Roboticists.
 - [OpenPodCar](https://github.com/OpenPodcar/OpenPodcar) - The OpenPodcar is an affordable and open-source hardware and software platform for self-driving car research.
 - [Mini Pupper](https://minipupperdocs.readthedocs.io/en/latest/index.html) - ROS, OpenCV, Open-source, Pi Robot Dog.
 - [EROS - 1](https://github.com/PENS-EROS) - Open Source Robot soccer project.
+- [Hexapod](https://markwtech.com/robots/hexapod/)
+- [machinascript-for-robots](https://github.com/babycommando/machinascript-for-robots)
+- [The Open Motion Planning Library](https://ompl.kavrakilab.org/)
+- [Robot-Overlord-App](https://github.com/marginallyclever/robot-overlord-app)
 - Find more projects [here](https://www.openrobothardware.org/linkedprojects/)!
 
-**2. Projects Using Arduino**
+**2. Robotics Projects**
 - [Obstacle Avoiding Mobile Robot](https://circuitdigest.com/microcontroller-projects/arduino-obstacle-avoiding-car)
 - [Mars Rover](https://circuitdigest.com/microcontroller-projects/build-your-own-mars-rover-robot-using-arduino)
 - [Self-Balancing Robot](https://www.instructables.com/Arduino-Self-Balancing-Robot-1/)
 - [Robot Arm Controller](https://www.hackster.io/H0meMadeGarbage/robot-arm-with-controller-2038df)
 - [Arduino Quadcopter](https://www.hackster.io/edocit/arduino-drone-042191?f=1)
+- [Ping Pong using ROS Turtlesim](https://github.com/fjp/ros-turtle-pong)
+- [Draw Iron Man using ROS Turtlesim](https://github.com/Shilpaj1994/TurtleSim-Sketch)
+- [Snake Game using ROS Turtlesim](https://github.com/sakthibalanv/TurtleSim_Snake_Game)
+- [Turtlesim Buster](https://github.com/issaiass/TurtlesimBuster)
+- [Catch me if you can – Turtlesim Game](https://github.com/jatinarora30/Catch-me-if-you-can-Turtlesim-)
 
 **3. Repositories to Learn Robotics**
 - [Robotics Research Papers](https://github.com/ColinShaw/robotics-and-machine-vision-resources#interesting-and-relevant-articles)
@@ -55,7 +64,7 @@ A complete library of resources that caters to all levels of Roboticists.
 - [Self-Driving Cars with ROS 2 & Autoware](https://www.youtube.com/playlist?list=PLL57Sz4fhxLpCXgN0lvCF7aHAlRA5FoFr)
 - [ROS2 Tutorials](https://www.youtube.com/playlist?list=PLNw2RD-1J5YZbyWXCpas9zPJldfphPi4Q)
 
-**6. YouTube Channels/Playlists to Learn Robotics**
+**6. YouTube Channels/Playlists/Courses to Learn Robotics**
 
 ***Channels***
 - [Duckietown](https://www.youtube.com/@duckietown)
@@ -72,6 +81,26 @@ A complete library of resources that caters to all levels of Roboticists.
 ***Playlists***
 - [Robotics 501: Mathematics for Robotics](https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH)
 - [Introduction to Robotics](https://www.youtube.com/playlist?list=PLyqSpQzTE6M_XM9cvjLLO_Azt1FkgPhpH)
+- [Robotic Manipulation, Fall 2023](https://www.youtube.com/playlist?list=PLkx8KyIQkMfWr191lqbN8WfV08j-ui8WX)
+- [Underactuated Robotics, Spring 2021](https://www.youtube.com/watch?v=_1CtAHVea8I&list=PLkx8KyIQkMfUmB3j-DyP58ThDXM7enA8x)
+- [Cognitive Robotics, Spring 2016](https://www.youtube.com/playlist?list=PLUl4u3cNGP62Bkdzwe7caTZC7soj7ZYvk)
+- [Robotics Institute Seminar Series](https://www.youtube.com/playlist?list=PLCFD85BC79FE703DF)
+- [Robot Dynamics 2022](https://www.youtube.com/playlist?list=PLZnJoM76RM6ItAfZIxJYNKdaR_BobleLY)
+- [Optimal Control 2023](https://www.youtube.com/playlist?list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa)
+- [Introduction to Robotics Course](https://www.youtube.com/playlist?list=PL4847E1D1C121292F)
+- [Modern Robotics by Northwestern University ](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx)
+- [Robotics by Indian Institute of Technology, Kharagpur](https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_)
+
+***Courses***
+- [Self-Driving Cars with Duckietown](https://duckietown.com/mooc/)
+- [Introduction To Robotics by Massachusetts Institute of Technology](https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/)
+- [QUT Robot Academy by QUT (Queensland University of Technology)](https://robotacademy.net.au/)
+- [Introduction to Robotics by Stanford University](https://see.stanford.edu/Course/CS223A)
+- [Introduction to Mobile Robotics by The University of Freiburg](http://ais.informatik.uni-freiburg.de/teaching/ss16/robotics/index_en.php)
+- [Applied robot design by Stanford University](https://www.youtube.com/user/StanfordCS235/videos)
+- [Underactuated Robotics by MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)](https://underactuated.csail.mit.edu/index.html)
+- [Advanced Robotics by University of California, Berkeley](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/)
+
 
 **7. Books to learn Robotics**
 - [ROS Robotics by Example](https://sceweb.sce.uhcl.edu/harman/CENG5437_MobileRobots/Webitems2020/ROS_ROBOTICS_BY_EXAMPLE_SECOND_EDITION.pdf)
@@ -82,6 +111,7 @@ A complete library of resources that caters to all levels of Roboticists.
 - [Robot Operating System for Absolute Beginners](http://wiki.iranros.com/wp-content/uploads/2019/10/Lentin-Joseph-Robot-Operating-SystemROSfor-Absolute-Beginners_IRANROS.COM2018.pdf)
 
 **8. Robotic Simulators**
+- [gym-duckietown](https://github.com/duckietown/gym-duckietown)
 - [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim)
 - [Gazebo by Open Robotics](https://classic.gazebosim.org/)
 - [RoboDK](https://robodk.com/)
@@ -89,3 +119,16 @@ A complete library of resources that caters to all levels of Roboticists.
 - [CoppeliaSim](https://coppeliarobotics.com/)
 - [AWS RoboMaker](https://aws.amazon.com/robomaker/)
 - [MORSE](https://morse-simulator.github.io/)
+- [Simscape](https://uk.mathworks.com/products/simscape.html)
+- [AGX Dynamics](https://www.algoryx.se/agx-dynamics/)
+- [Cenit FastSuite Edition 2](https://www.cenit.com/en_EN/solutions-services/software-solutions/fastsuite-edition-2.html)
+- [Dassault Systemes 3D Experience](https://www.3ds.com/products/delmia/industrial-engineering/robotics)
+- [Open Modelica](https://openmodelica.org/)
+- [Siemens Robotics](https://plm.sw.siemens.com/en-US/nx/manufacturing/robotic-machining-programming/)
+- [ABB Robot Studio](https://new.abb.com/products/robotics/robotstudio)
+- [realvirtual.io](https://realvirtual.io/)
+- [twin](https://www.digifai.com/en/twin/)
+- [mujoco](https://github.com/google-deepmind/mujoco)
+- [Visual Components](https://www.visualcomponents.com/)
+- [Unity](https://unity.com/)
+- [EASY-ROB](https://easy-rob.com/)
