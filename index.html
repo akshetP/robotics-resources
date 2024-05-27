@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics Resources Library</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,12 +57,48 @@
         ul li a:hover {
             text-decoration: underline;
         }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list-ico, .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-ico li, .social-icons li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .list-ico li:last-child, .social-icons li:last-child {
+            margin-right: 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Robotics Resources Library</h1>
+    <h1>Robotics Resources by <a href="https://akshetpatel.tech/" target="_blank">Akshet Patel</a></h1>
+        <center><a class="github-button" href="https://github.com/akshetP/robotics-resources" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star akshetP/robotics-resources on GitHub">Star</a>
+        <script async defer src="https://buttons.github.io/buttons.js"></script></center>
+        <center>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/akshet.patel.14/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/akshet.patel/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/Akshet9" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com/@akshetpatel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://github.com/akshetP" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><i class="fas fa-map-marker-alt"></i>London, United Kingdom</li>
+                <li><i class="fas fa-phone-alt"></i> <a href="https://wa.me/447570321537">+44 7570321537</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:akshetp.ap@gmail.com">akshetp.ap@gmail.com</a></li>
 
-    <button class="accordion">Open Source Robotics Projects</button>
+            </ul>
+            </center>
+
+    <button class="accordion"><i class="fas fa-cogs"></i> Open Source Robotics Projects GitHub Repositories</button>
     <div class="panel">
         <ul>
             <li><a href="https://github.com/duckietown">Duckietown</a></li>
@@ -81,7 +119,7 @@
         </ul>
     </div>
 
-    <button class="accordion">Robotics Projects</button>
+    <!-- <button class="accordion"><i class="fas fa-robot"></i> Robotics Projects</button>
     <div class="panel">
         <ul>
             <li><a href="https://circuitdigest.com/microcontroller-projects/arduino-obstacle-avoiding-car">Obstacle Avoiding Mobile Robot</a></li>
@@ -95,9 +133,9 @@
             <li><a href="https://github.com/issaiass/TurtlesimBuster">Turtlesim Buster</a></li>
             <li><a href="https://github.com/jatinarora30/Catch-me-if-you-can-Turtlesim-">Catch me if you can – Turtlesim Game</a></li>
         </ul>
-    </div>
+    </div> -->
 
-    <button class="accordion">Repositories to Learn Robotics</button>
+    <button class="accordion"><i class="fas fa-book"></i> GitHub Repositories to Learn Robotics</button>
     <div class="panel">
         <ul>
             <li><a href="https://github.com/ColinShaw/robotics-and-machine-vision-resources#interesting-and-relevant-articles">Robotics Research Papers</a></li>
@@ -118,7 +156,7 @@
         </ul>
     </div>
 
-    <button class="accordion">ROS Resources</button>
+    <button class="accordion"><i class="fas fa-robot"></i> ROS Resources</button>
     <div class="panel">
         <ul>
             <li><a href="https://ocw.tudelft.nl/courses/hello-real-world-ros-robot-operating-system/">By Delft University of Technology, Netherlands</a></li>
@@ -132,7 +170,7 @@
         </ul>
     </div>
 
-    <button class="accordion">ROS 2 Resources</button>
+    <button class="accordion"><i class="fas fa-robot"></i> ROS 2 Resources</button>
     <div class="panel">
         <ul>
             <li><a href="https://www.youtube.com/playlist?list=PLRE44FoOoKf7NzWwxt3W2taZ7BiWyfhCp">ROS2 Tutorial for Beginners (Foxy)</a></li>
@@ -143,9 +181,9 @@
         </ul>
     </div>
 
-    <button class="accordion">YouTube Channels/Playlists/Courses to Learn Robotics</button>
-    <div class="panel">
-        <h3>Channels</h3>
+    <button class="accordion"><i class="fab fa-youtube"></i> YouTube Channels & Playlists to Learn Robotics</button>
+    <div class="panel"><br>
+        <h4>Channels</h4>
         <ul>
             <li><a href="https://www.youtube.com/@duckietown">Duckietown</a></li>
             <li><a href="https://www.youtube.com/@LearnRobotics">LearnRobotics by Liz Miller</a></li>
@@ -159,7 +197,7 @@
             <li><a href="https://www.youtube.com/@RoboticsBackEnd">RoboticsBackEnd</a></li>
         </ul>
 
-        <h3>Playlists</h3>
+        <h4>Playlists</h4>
         <ul>
             <li><a href="https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH">Robotics 501: Mathematics for Robotics</a></li>
             <li><a href="https://www.youtube.com/playlist?list=PLyqSpQzTE6M_XM9cvjLLO_Azt1FkgPhpH">Introduction to Robotics</a></li>
@@ -173,8 +211,10 @@
             <li><a href="https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx">Modern Robotics by Northwestern University</a></li>
             <li><a href="https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_">Robotics by Indian Institute of Technology, Kharagpur</a></li>
         </ul>
+    </div>
 
-        <h3>Courses</h3>
+    <button class="accordion"><i class="fas fa-chalkboard"></i> Free University Courses</button>
+        <div class="panel">
         <ul>
             <li><a href="https://duckietown.com/mooc/">Self-Driving Cars with Duckietown</a></li>
             <li><a href="https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/">Introduction To Robotics by Massachusetts Institute of Technology</a></li>
@@ -187,7 +227,7 @@
         </ul>
     </div>
 
-    <button class="accordion">Books to Learn Robotics</button>
+    <button class="accordion"><i class="fas fa-book-open"></i> Books to Learn Robotics</button>
     <div class="panel">
         <ul>
             <li><a href="https://sceweb.sce.uhcl.edu/harman/CENG5437_MobileRobots/Webitems2020/ROS_ROBOTICS_BY_EXAMPLE_SECOND_EDITION.pdf">ROS Robotics by Example</a></li>
@@ -199,7 +239,7 @@
         </ul>
     </div>
 
-    <button class="accordion">Robotic Simulators</button>
+    <button class="accordion"><i class="fas fa-satellite-dish"></i> Robotic Simulators</button>
     <div class="panel">
         <ul>
             <li><a href="https://github.com/duckietown/gym-duckietown">gym-duckietown</a></li>
@@ -226,6 +266,10 @@
         </ul>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
     var acc = document.getElementsByClassName("accordion");
