@@ -1,27 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProjectCard {
   id: string;
   name: string;
   icon: string;
+  href: string;
   description?: string;
 }
 
 const projects: ProjectCard[] = [
-  { id: '1', name: 'Mini Pupper', icon: '/images/projects/minipupper.svg' },
-  { id: '2', name: 'Open-Source Rover by NASA Jet Propulsion Laboratory', icon: '/images/projects/nasa.svg' },
-  { id: '3', name: 'OpenPodCar', icon: '/images/projects/openpodcar.svg' },
-  { id: '4', name: 'EROS - 1', icon: '/images/projects/pens-eros.svg' },
-  { id: '5', name: 'FITENTH', icon: '/images/projects/roboracer.svg' },
-  { id: '6', name: 'The Autoware Foundation', icon: '/images/projects/Autoware.svg' },
-  { id: '7', name: 'machinascript-for-robots', icon: '/images/projects/babycommando.svg' },
-  { id: '8', name: 'Duckietown', icon: '/images/projects/duckietown.svg' },
-  { id: '9', name: 'Robot-Overlord-App', icon: '/images/projects/MarginallyClever.svg' },
-  { id: '10', name: 'ROSbloX', icon: '/images/projects/ROSblo.svg' },
-  { id: '11', name: 'andino', icon: '/images/projects/andio.svg' },
-  { id: '12', name: 'The Open Motion Planning Library', icon: '/images/projects/ompl.svg' },
-  { id: '13', name: 'TortoiseBot', icon: '/images/projects/tortoisebot.svg' },
+  { id: '1', name: 'Mini Pupper', icon: '/images/projects/minipupper.svg', href: 'https://minipupperdocs.readthedocs.io/en/latest/index.html' },
+  { id: '2', name: 'Open-Source Rover by NASA Jet Propulsion Laboratory', icon: '/images/projects/nasa.svg', href: 'https://github.com/nasa-jpl/open-source-rover#getting-started' },
+  { id: '3', name: 'OpenPodCar', icon: '/images/projects/openpodcar.svg', href: 'https://github.com/OpenPodcar/OpenPodcar' },
+  { id: '4', name: 'EROS - 1', icon: '/images/projects/pens-eros.svg', href: 'https://github.com/PENS-EROS' },
+  { id: '5', name: 'FITENTH', icon: '/images/projects/roboracer.svg', href: 'https://f1tenth.org/learn.html' },
+  { id: '6', name: 'The Autoware Foundation', icon: '/images/projects/Autoware.svg', href: 'https://github.com/autowarefoundation' },
+  { id: '7', name: 'machinascript-for-robots', icon: '/images/projects/babycommando.svg', href: 'https://github.com/babycommando/machinascript-for-robots' },
+  { id: '8', name: 'Duckietown', icon: '/images/projects/duckietown.svg', href: 'https://github.com/duckietown' },
+  { id: '9', name: 'Robot-Overlord-App', icon: '/images/projects/MarginallyClever.svg', href: 'https://github.com/marginallyclever/robot-overlord-app' },
+  { id: '10', name: 'ROSbloX', icon: '/images/projects/ROSblo.svg', href: 'https://rosblox.github.io/' },
+  { id: '11', name: 'andino', icon: '/images/projects/andio.svg', href: 'https://github.com/Ekumen-OS/andino' },
+  { id: '12', name: 'The Open Motion Planning Library', icon: '/images/projects/ompl.svg', href: 'https://ompl.kavrakilab.org/' },
+  { id: '13', name: 'TortoiseBot', icon: '/images/projects/tortoisebot.svg', href: 'https://github.com/rigbetellabs/tortoisebot' },
 ];
 
 const ProjectCard: React.FC<{ project: ProjectCard; className?: string }> = ({ 
@@ -29,7 +31,7 @@ const ProjectCard: React.FC<{ project: ProjectCard; className?: string }> = ({
   className = "" 
 }) => {
   return (
-    <div className={`
+    <Link href={project.href} className={`
       bg-white 
       border-2 
       border-[#0004FF] 
@@ -56,13 +58,13 @@ const ProjectCard: React.FC<{ project: ProjectCard; className?: string }> = ({
       <div className={`text-black text-sm font-medium leading-tight ${ ((project.id) == '2') ? "text-[10px] mb-[10px]" : "text-sm" }`}>
         {project.name}
       </div>
-    </div>
+    </Link>
   );
 };
 
 const FindMoreCard: React.FC<{ className?: string }> = ({ className = "" }) => {
   return (
-    <div className={`
+    <Link href={'https://www.openrobothardware.org/linkedprojects/'} className={`
       bg-white 
       border-2 
       border-[#0004FF] 
@@ -91,7 +93,7 @@ const FindMoreCard: React.FC<{ className?: string }> = ({ className = "" }) => {
       <div className="text-black text-sm font-medium leading-tight px-2">
         Find more projects here
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -120,7 +122,7 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Desktop Project Grid - 3 rows x 5 columns */}
-              <div className="flex items-center justify-center grid grid-cols-5 gap-6 mt-[10px] p-[20px] pl-[60px] w-full">
+              <div className="grid grid-cols-5 gap-6 mt-[10px] p-[20px] pl-[60px] w-full">
                 {/* First Row */}
                 <ProjectCard project={projects[0]} className="h-40 w-40" />
                 <ProjectCard project={projects[1]} className="h-40 w-40" />
@@ -151,41 +153,41 @@ const Projects: React.FC = () => {
       <div className="lg:hidden">
         <div className="p-4">
           {/* Mobile Header */}
-          <div className="flex items-center justify-center mb-8">
+          <div className="items-center justify-center mb-8">
             <div className="rounded-full flex items-center justify-center mr-3">
               <Image
                 src={"/icons/project.svg"}
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 alt='MobileS'
               />
             </div>
-            <h1 className="text-black text-[15px] font-bold leading-tight">
+            <h1 className="flex items-center justify-center text-black text-lg font-bold leading-tight">
               Open Source Robotics Projects Github Repositories
             </h1>
           </div>
 
           {/* Mobile Grid - 4 rows x 3 columns */}
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-3 gap-3 space-y-[10px] mt-[20px">
             {/* First Row */}
-            <ProjectCard project={projects[0]} className="h-28 w-25" />
-            <ProjectCard project={projects[1]} className="h-32" />
-            <ProjectCard project={projects[2]} className="h-32" />
+            <ProjectCard project={projects[0]} className="h-30 w-28" />
+            <ProjectCard project={projects[1]} className="h-30 w-28" />
+            <ProjectCard project={projects[2]} className="h-30 w-28" />
             
             {/* Second Row */}
-            <ProjectCard project={projects[3]} className="h-32" />
-            <ProjectCard project={projects[4]} className="h-32" />
-            <ProjectCard project={projects[9]} className="h-32" />
+            <ProjectCard project={projects[3]} className="h-30 w-28" />
+            <ProjectCard project={projects[4]} className="h-30 w-28" />
+            <ProjectCard project={projects[9]} className="h-30 w-28" />
             
             {/* Third Row */}
-            <ProjectCard project={projects[6]} className="h-32" />
-            <ProjectCard project={projects[7]} className="h-32" />
-            <ProjectCard project={projects[8]} className="h-32" />
+            <ProjectCard project={projects[6]} className="h-30 w-28" />
+            <ProjectCard project={projects[7]} className="h-30 w-28"/>
+            <ProjectCard project={projects[8]} className="h-30 w-28" />
             
             {/* Fourth Row */}
-            <ProjectCard project={projects[5]} className="h-32" />
-            <ProjectCard project={projects[10]} className="h-32" />
-            <FindMoreCard className="h-32" />
+            <ProjectCard project={projects[5]} className="h-30 w-28 " />
+            <ProjectCard project={projects[10]} className="h-30 w-28" />
+            <FindMoreCard className="h-30 w-28"/>
           </div>
         </div>
       </div>
