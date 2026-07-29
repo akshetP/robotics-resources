@@ -11,7 +11,8 @@
     "lint:css": "stylelint \"assets/css/**/*.css\"",
     "lint": "npm run lint:html && npm run lint:css",
     "check:links": "python3 scripts/check_links.py --internal-only",
-    "test": "npm run build && npm run typecheck && npm run lint && npm run check:links"
+    "check:seo": "python3 scripts/check_seo.py",
+    "test": "npm run build && npm run typecheck && npm run lint && npm run check:links && npm run check:seo"
   },
   "repository": {
     "type": "git",

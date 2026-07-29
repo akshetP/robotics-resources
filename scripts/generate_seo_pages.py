@@ -2,6 +2,7 @@
 """Generate SEO/AEO secondary pages for getintorobotics.com."""
 from __future__ import annotations
 
+import html as html_lib
 import json
 import re
 from pathlib import Path
@@ -29,12 +30,7 @@ def extract_details_blocks(html: str):
         if not label_match:
             raise ValueError("A library disclosure is missing its label")
         label = label_match.group(1)
-        label = (
-            label.replace("&amp;", "&")
-            .replace("&lt;", "<")
-            .replace("&gt;", ">")
-            .replace("&quot;", '"')
-        )
+        label = html_lib.unescape(label)
         groups = []
         if "Channels" in block and "Playlists" in block:
             ch = re.search(
@@ -51,9 +47,9 @@ def extract_details_blocks(html: str):
             def parse_ul(ul: str):
                 items = []
                 for m in re.finditer(r'<li><a href="([^"]+)"[^>]*>([\s\S]*?)</a></li>', ul):
-                    text = re.sub(r"<[^>]+>", "", m.group(2)).strip()
+                    text = html_lib.unescape(re.sub(r"<[^>]+>", "", m.group(2))).strip()
                     text = re.sub(r"\s*\(opens in a new tab\)\s*", "", text).strip()
-                    items.append((m.group(1), text))
+                    items.append((html_lib.unescape(m.group(1)), text))
                 return items
 
             groups = [("Channels", parse_ul(ch.group(1))), ("Playlists", parse_ul(pl.group(1)))]
@@ -61,9 +57,9 @@ def extract_details_blocks(html: str):
         else:
             items = []
             for m in re.finditer(r'<li><a href="([^"]+)"[^>]*>([\s\S]*?)</a></li>', block):
-                text = re.sub(r"<[^>]+>", "", m.group(2)).strip()
+                text = html_lib.unescape(re.sub(r"<[^>]+>", "", m.group(2))).strip()
                 text = re.sub(r"\s*\(opens in a new tab\)\s*", "", text).strip()
-                items.append((m.group(1), text))
+                items.append((html_lib.unescape(m.group(1)), text))
         out.append({"label": label, "items": items, "groups": groups})
     return out
 
@@ -71,67 +67,67 @@ def extract_details_blocks(html: str):
 TOPIC_MAP = {
     "Open Source Robotics Projects GitHub Repositories": {
         "slug": "open-source-robotics-projects",
-        "title": "Open-source robotics projects",
+        "title": "Open-source robotics projects to build",
         "h1": "Open-source robotics projects",
-        "desc": "Explore 15 curated open-source robotics projects, from educational robots to autonomy stacks such as Duckietown, F1TENTH, Autoware and the NASA JPL Open-Source Rover.",
-        "answer": "Open-source robotics projects give learners working robots, platforms and software stacks they can clone, build and modify. This collection highlights educational platforms, mobile robots, autonomy projects and hardware ecosystems that are suitable for study and experimentation.",
-        "why": "Start here if you want a concrete robot or platform rather than abstract theory alone. Many of these projects ship documentation, simulations and community channels.",
+        "desc": "Explore 15 curated open-source robotics projects, including educational robots and autonomy stacks such as Duckietown, F1TENTH and Autoware.",
+        "answer": "Open-source robotics projects give learners complete robots, platforms and software stacks they can inspect, clone and modify. This collection covers educational platforms, mobile robots, autonomy projects and hardware ecosystems with public code, helping you connect robotics theory to a working implementation.",
+        "why": "Start here when you want to build or reproduce a concrete robot workflow rather than study theory alone. Prefer a project with current documentation, simulation support and an active community, then complete one documented demo before changing its hardware or autonomy stack.",
     },
     "GitHub Repositories to Learn Robotics": {
         "slug": "learning-repositories",
         "title": "GitHub repositories to learn robotics",
         "h1": "GitHub repositories to learn robotics",
-        "desc": "Browse 15 curated GitHub repositories for learning robotics, including paper lists, PythonRobotics, coursework and awesome machine learning for robotics collections.",
-        "answer": "Learning repositories collect papers, tutorials, algorithms and coursework in one place. They are useful when you want structured reading lists or code examples rather than a single product tutorial.",
-        "why": "Use these lists to deepen mathematics, perception, localisation and machine learning for robotics after you have a basic project workflow.",
+        "desc": "Browse 15 curated GitHub repositories for robotics learning, including PythonRobotics, coursework, paper lists and machine-learning collections.",
+        "answer": "Robotics learning repositories organise papers, tutorials, algorithms, coursework and code examples in one place. They are useful when you need a structured route into topics such as localisation, planning, perception or machine learning instead of another isolated product tutorial and want to practise deliberately.",
+        "why": "Use these repositories after you can run a basic robot or simulator workflow. Choose one topic, reproduce a small code example, and record what you learned before opening another list. This keeps broad collections from becoming passive bookmark archives over time.",
     },
     "ROS Resources": {
         "slug": "ros",
-        "title": "ROS resources",
+        "title": "ROS tutorials and learning resources",
         "h1": "ROS resources",
-        "desc": "University ROS courses and community lists from Delft, ETH Zurich, Purdue, UPC Barcelona and more, curated for robotics learners.",
-        "answer": "ROS (Robot Operating System) is a widely used middleware framework for writing robot software. This collection focuses on university courses and curated community lists that teach classic ROS concepts and tooling.",
-        "why": "Choose these materials if you are maintaining ROS 1 systems, comparing ROS with ROS 2, or following an academic course that still uses ROS.",
+        "desc": "Explore curated ROS tutorials, university courses and community resource lists from Delft, ETH Zurich, Purdue, UPC Barcelona and other institutions.",
+        "answer": "ROS, or Robot Operating System, is middleware and a software ecosystem for building robot applications from reusable processes and packages. This collection focuses on university courses and community lists that teach classic ROS 1 concepts, tooling and practical workflows in existing systems.",
+        "why": "Choose these materials when you maintain a ROS 1 system, follow an academic course that still uses ROS, or need to compare legacy packages with ROS 2. New projects should normally begin with ROS 2 unless a dependency specifically requires ROS 1.",
     },
     "ROS 2 Resources": {
         "slug": "ros-2",
-        "title": "ROS 2 resources",
+        "title": "ROS 2 tutorials and learning resources",
         "h1": "ROS 2 resources",
-        "desc": "Curated ROS 2 tutorials and playlists for beginners, including Humble crash courses and Autoware self-driving material.",
-        "answer": "ROS 2 is the current generation of the Robot Operating System, designed for production robots with improved real-time, security and multi-robot support. This page gathers beginner-friendly tutorials and playlists so you can install tools, run nodes and understand the graph.",
-        "why": "New robotics software projects should generally start with ROS 2 rather than ROS 1. Pair these tutorials with a simulator such as Gazebo or Webots.",
+        "desc": "Learn ROS 2 with curated beginner tutorials, Humble crash courses, practical playlists and Autoware self-driving robotics material.",
+        "answer": "ROS 2 is the current generation of the Robot Operating System, designed for production robots with improved real-time, security and multi-robot support. These beginner-friendly tutorials and playlists help you install the tools, run communicating nodes and understand the ROS graph.",
+        "why": "New robotics software projects should generally start with ROS 2 rather than ROS 1. Learn nodes, topics, services and packages first, then pair the tutorials with Gazebo or Webots so you can practise repeatably before connecting physical hardware. Record each working command.",
     },
     "YouTube Channels & Playlists to Learn Robotics": {
         "slug": "youtube-robotics",
-        "title": "YouTube channels and playlists for robotics",
+        "title": "Robotics YouTube channels and playlists",
         "h1": "YouTube channels and playlists for robotics",
         "desc": "21 curated YouTube channels and lecture playlists covering robotics mathematics, manipulation, dynamics, control and hands-on builds.",
-        "answer": "Video channels and lecture playlists help when you prefer demonstrated workflows or university lecture series. This collection separates channels from playlists so you can browse creators or complete course-style series.",
-        "why": "Use channels for ongoing inspiration and playlists when you want a sequenced syllabus you can finish over several weeks.",
+        "answer": "Robotics video channels and lecture playlists make mathematical ideas, software workflows and physical builds easier to follow through demonstrations. This collection separates ongoing creator channels from sequenced playlists covering manipulation, dynamics, control, autonomous systems and practical robotics at different experience levels.",
+        "why": "Use individual channels for demonstrations and current project ideas. Choose a complete playlist when you need a sequenced syllabus, and work through it in order while reproducing examples in code or simulation instead of watching passively. Set a weekly completion goal.",
     },
     "Free University Courses": {
         "slug": "university-courses",
         "title": "Free university courses in robotics",
         "h1": "Free university courses in robotics",
-        "desc": "Eight free university and lab courses in robotics from MIT, Stanford, QUT, Freiburg, UC Berkeley and Duckietown.",
-        "answer": "Free university courses provide structured robotics learning with lecture notes, assignments or video series from recognised institutions. They are one of the highest-leverage ways to build foundations without paying for a full degree module.",
-        "why": "Pick one course and finish it before collecting more bookmarks. Complement lectures with simulator practice and a small open-source project.",
+        "desc": "Study robotics with eight free university and laboratory courses from MIT, Stanford, QUT, Freiburg, UC Berkeley and Duckietown.",
+        "answer": "Free university robotics courses provide structured learning through lecture notes, assignments, exercises or complete video series from recognised institutions. They are one of the highest-leverage ways to build foundations in kinematics, control, perception and planning without paying for a degree module.",
+        "why": "Pick one course whose prerequisites match your current level and finish it before collecting more bookmarks. Complete its exercises where possible, then reinforce the lectures with simulator practice and a small open-source project that uses the same concepts. Keep notes on each exercise.",
     },
     "Books to Learn Robotics": {
         "slug": "robotics-books",
-        "title": "Books to learn robotics",
+        "title": "Best books to learn robotics and ROS",
         "h1": "Books to learn robotics",
-        "desc": "Six ROS-focused robotics books available online as PDFs, selected for beginners and intermediate learners.",
-        "answer": "Books remain useful for systematic coverage of ROS concepts, tooling and examples. This collection focuses on titles that learners can access online while working through tutorials.",
-        "why": "Use a book alongside a simulator and a tutorial playlist. Do not wait until you have read everything before writing your first node.",
+        "desc": "Explore six accessible books for learning robotics and ROS, selected for beginners and intermediate learners who want structured, practical coverage.",
+        "answer": "Robotics books provide systematic explanations of concepts, software tools and worked examples that short tutorials often omit. This collection focuses on accessible ROS-oriented titles for beginner and intermediate learners who want a structured reference alongside practical exercises at their own pace.",
+        "why": "Use one book alongside a simulator and a tutorial playlist, and reproduce each useful example as you read. Do not wait to finish every chapter before writing your first node; practical recall improves when reading and implementation happen together while you learn.",
     },
     "Robotic Simulators": {
         "slug": "robotic-simulators",
-        "title": "Robotic simulators",
+        "title": "Best robotic simulators compared",
         "h1": "Robotic simulators",
         "desc": "Compare 21 robotic simulators and digital twin tools, from Gazebo, Webots and MuJoCo to Isaac Sim, RoboDK and industrial suites.",
-        "answer": "Robotic simulators let you test algorithms, robot models and factories without physical hardware. Options range from research engines such as MuJoCo and Gazebo to industrial digital twins and game-engine workflows.",
-        "why": "Beginners often start with Gazebo, Webots or a ROS-integrated tutorial stack. Specialists may need Isaac Sim, RoboDK or vendor-specific environments later.",
+        "answer": "Robotic simulators let you test algorithms, robot models and factory workflows safely without physical hardware. Options range from research engines such as MuJoCo and Gazebo to educational platforms, ROS-integrated tools, industrial digital twins and high-fidelity game-engine workflows for different budgets and skill levels.",
+        "why": "Beginners often start with Gazebo, Webots or the simulator used by their chosen course because documentation matters more than raw feature count. Specialists may later need Isaac Sim, RoboDK or vendor-specific environments for perception, manufacturing or digital-twin workflows and project constraints.",
     },
 }
 
@@ -144,8 +140,13 @@ def favicon_href(depth: int) -> str:
     return "../" * depth + "assets/img/favicon.png"
 
 
-def og_href() -> str:
-    return f"{DOMAIN}/images/og-default.png"
+def og_href(path: str = "/") -> str:
+    if path == "/":
+        filename = "og-default.png"
+    else:
+        slug = path.strip("/").replace("/", "-")
+        filename = f"og-{slug}.png"
+    return f"{DOMAIN}/images/{filename}"
 
 
 ORG = {
@@ -154,7 +155,12 @@ ORG = {
     "name": "Get Into Robotics",
     "alternateName": "Robotics Resources Library",
     "url": f"{DOMAIN}/",
-    "logo": f"{DOMAIN}/assets/img/favicon.png",
+    "logo": {
+        "@type": "ImageObject",
+        "url": f"{DOMAIN}/images/logo.png",
+        "width": 512,
+        "height": 512,
+    },
     "founder": {
         "@type": "Person",
         "name": "Akshet Patel",
@@ -183,8 +189,22 @@ WEBSITE = {
 }
 
 
-def head(title: str, description: str, path: str, depth: int, schemas=None, og_type: str = "website") -> str:
+def head(
+    title: str,
+    description: str,
+    path: str,
+    depth: int,
+    schemas=None,
+    og_type: str = "website",
+    indexable: bool = True,
+) -> str:
     canonical = DOMAIN + path
+    robots = "index, follow, max-image-preview:large" if indexable else "noindex, follow"
+    canonical_html = (
+        f'    <link rel="canonical" href="{canonical}">\n' if indexable else ""
+    )
+    image = og_href(path) if indexable else og_href()
+    image_alt = title.split("|", 1)[0].strip()
     schema_html = ""
     for schema in schemas or []:
         payload = json.dumps(schema, indent=2, ensure_ascii=False)
@@ -196,27 +216,26 @@ def head(title: str, description: str, path: str, depth: int, schemas=None, og_t
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content="{description}">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="robots" content="{robots}">
     <meta name="author" content="Akshet Patel">
     <meta name="theme-color" content="#6b21a8">
-    <link rel="canonical" href="{canonical}">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="{DOMAIN}/llms.txt">
+{canonical_html}    <link rel="alternate" type="text/plain" title="llms.txt" href="{DOMAIN}/llms.txt">
     <meta property="og:type" content="{og_type}">
     <meta property="og:site_name" content="Get Into Robotics">
     <meta property="og:locale" content="en_GB">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{description}">
     <meta property="og:url" content="{canonical}">
-    <meta property="og:image" content="{og_href()}">
+    <meta property="og:image" content="{image}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Get Into Robotics: Robotics Resources Library">
+    <meta property="og:image:alt" content="Get Into Robotics: {image_alt}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{og_href()}">
+    <meta name="twitter:image" content="{image}">
     <meta name="twitter:creator" content="@Akshet9">
-    <link rel="icon" href="{favicon_href(depth)}">
+    <link rel="icon" type="image/png" href="{favicon_href(depth)}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -348,12 +367,28 @@ def breadcrumbs(items):
     return "\n".join(parts)
 
 
+def breadcrumb_schema(items: list[tuple[str, str]]) -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "name": name,
+                "item": DOMAIN + path,
+            }
+            for position, (path, name) in enumerate(items, 1)
+        ],
+    }
+
+
 def item_list_html(items=None, groups=None) -> str:
     if groups:
         chunks = []
         for title, group_items in groups:
             lis = "\n".join(
-                f'                            <li><a href="{href}" target="_blank" rel="noopener">{text} <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>'
+                f'                            <li><a href="{html_lib.escape(href, quote=True)}" target="_blank" rel="noopener">{html_lib.escape(text)} <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>'
                 for href, text in group_items
             )
             chunks.append(
@@ -366,7 +401,7 @@ def item_list_html(items=None, groups=None) -> str:
             )
         return "\n".join(chunks)
     lis = "\n".join(
-        f'                        <li><a href="{href}" target="_blank" rel="noopener">{text} <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>'
+        f'                        <li><a href="{html_lib.escape(href, quote=True)}" target="_blank" rel="noopener">{html_lib.escape(text)} <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>'
         for href, text in (items or [])
     )
     return f"""                    <div class="resource-group">
@@ -391,14 +426,9 @@ def main() -> None:
         path = f"/topics/{meta['slug']}/"
         depth = 2
         page_url = DOMAIN + path
-        breadcrumb_schema = {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{DOMAIN}/"},
-                {"@type": "ListItem", "position": 2, "name": meta["title"], "item": page_url},
-            ],
-        }
+        topic_breadcrumbs = breadcrumb_schema(
+            [("/", "Home"), (path, meta["h1"])]
+        )
         collection_schema = {
             "@context": "https://schema.org",
             "@graph": [
@@ -434,7 +464,7 @@ def main() -> None:
             f'                    <li><a href="{href}">{title} <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>'
             for href, title in related
         )
-        page = f"""{head(f"{meta['title']} | Get Into Robotics", meta['desc'], path, depth, [collection_schema, breadcrumb_schema])}
+        page = f"""{head(f"{meta['title']} | Get Into Robotics", meta['desc'], path, depth, [collection_schema, topic_breadcrumbs])}
 <body>
 {header(depth, "topics")}
     <main class="layout" id="main" tabindex="-1">
@@ -509,9 +539,10 @@ def main() -> None:
             },
         ],
     }
+    about_breadcrumbs = breadcrumb_schema([("/", "Home"), ("/about/", "About")])
     write(
         ROOT / "about/index.html",
-        f"""{head("About Get Into Robotics | Curated robotics learning library", "Learn who maintains Get Into Robotics, how the robotics resource library is curated, and how to contribute corrections or new links.", "/about/", 1, [about_schema])}
+        f"""{head("About Get Into Robotics | Curated robotics learning library", "Learn who maintains Get Into Robotics, how the robotics resource library is curated, and how to contribute corrections or new links.", "/about/", 1, [about_schema, about_breadcrumbs])}
 <body>
 {header(1, "about")}
     <main class="layout" id="main" tabindex="-1">
@@ -539,10 +570,8 @@ def main() -> None:
             <section class="content-block">
                 <h2>Trust and transparency</h2>
                 <ul>
-                    <li>No affiliate book promotions are shown on this site.</li>
                     <li>External destinations keep their own licences, pricing and privacy policies.</li>
                     <li>Microsoft Clarity is used for anonymised usage analytics on the homepage experience.</li>
-                    <li>British English is used for original site copy.</li>
                 </ul>
             </section>
             <section class="content-block">
@@ -586,6 +615,9 @@ def main() -> None:
             },
         ],
     }
+    faq_breadcrumbs = breadcrumb_schema(
+        [("/", "Home"), ("/faq/", "Robotics learning FAQ")]
+    )
     faq_items = "\n".join(
         f"""                <details class="disclosure">
                     <summary class="disclosure__summary">
@@ -602,7 +634,7 @@ def main() -> None:
     )
     write(
         ROOT / "faq/index.html",
-        f"""{head("Robotics learning FAQ | Get Into Robotics", "Answers to common questions about learning robotics, choosing ROS or ROS 2, picking simulators and using the Get Into Robotics curated library.", "/faq/", 1, [faq_schema])}
+        f"""{head("Robotics learning questions and FAQ | Get Into Robotics", "Answers to common questions about learning robotics, choosing ROS or ROS 2, picking simulators and using the Get Into Robotics curated library.", "/faq/", 1, [faq_schema, faq_breadcrumbs])}
 <body>
 {header(1, "faq")}
     <main class="layout" id="main" tabindex="-1">
@@ -645,7 +677,7 @@ def main() -> None:
                 "publisher": {"@id": f"{DOMAIN}/#organization"},
                 "mainEntityOfPage": f"{DOMAIN}/guides/how-to-learn-robotics/",
                 "inLanguage": "en-GB",
-                "image": og_href(),
+                "image": og_href("/guides/how-to-learn-robotics/"),
             },
             {
                 "@type": "HowTo",
@@ -658,9 +690,15 @@ def main() -> None:
             },
         ],
     }
+    learn_breadcrumbs = breadcrumb_schema(
+        [
+            ("/", "Home"),
+            ("/guides/how-to-learn-robotics/", "How to learn robotics"),
+        ]
+    )
     write(
         ROOT / "guides/how-to-learn-robotics/index.html",
-        f"""{head("How to learn robotics: a practical path | Get Into Robotics", "A practical British English guide to learning robotics: foundations, free courses, simulators, open-source projects and when to start ROS 2.", "/guides/how-to-learn-robotics/", 2, [learn_schema], og_type="article")}
+        f"""{head("How to learn robotics: a practical path | Get Into Robotics", "A practical guide to learning robotics: foundations, free courses, simulators, open-source projects and knowing when to start ROS 2.", "/guides/how-to-learn-robotics/", 2, [learn_schema, learn_breadcrumbs], og_type="article")}
 <body>
 {header(2, "guides")}
     <main class="layout" id="main" tabindex="-1">
@@ -729,7 +767,7 @@ def main() -> None:
                 "publisher": {"@id": f"{DOMAIN}/#organization"},
                 "mainEntityOfPage": f"{DOMAIN}/guides/getting-started-with-ros-2/",
                 "inLanguage": "en-GB",
-                "image": og_href(),
+                "image": og_href("/guides/getting-started-with-ros-2/"),
             },
             {
                 "@type": "HowTo",
@@ -742,9 +780,15 @@ def main() -> None:
             },
         ],
     }
+    ros2_breadcrumbs = breadcrumb_schema(
+        [
+            ("/", "Home"),
+            ("/guides/getting-started-with-ros-2/", "Getting started with ROS 2"),
+        ]
+    )
     write(
         ROOT / "guides/getting-started-with-ros-2/index.html",
-        f"""{head("Getting started with ROS 2 | Get Into Robotics", "Learn how to start ROS 2 the right way: environment setup, core concepts, beginner tutorials, simulators and curated playlists.", "/guides/getting-started-with-ros-2/", 2, [ros2_schema], og_type="article")}
+        f"""{head("ROS 2 beginner guide: getting started | Get Into Robotics", "Learn how to start ROS 2 the right way: environment setup, core concepts, beginner tutorials, simulators and curated playlists.", "/guides/getting-started-with-ros-2/", 2, [ros2_schema, ros2_breadcrumbs], og_type="article")}
 <body>
 {header(2, "guides")}
     <main class="layout" id="main" tabindex="-1">
@@ -784,15 +828,16 @@ def main() -> None:
 
     write(
         ROOT / "404.html",
-        f"""{head("Page not found | Get Into Robotics", "The page you requested could not be found on Get Into Robotics.", "/404.html", 0)}
+        f"""{head("404: lost in the stack | Get Into Robotics", "This page is missing. The robot looked everywhere, including under the Gazebo, and found only a lonely 404.", "/404.html", 0, indexable=False)}
 <body>
 {header(0)}
     <main class="layout" id="main" tabindex="-1">
         <section class="col-content page-hero">
-            <h1 class="page-hero__title">Page not found</h1>
-            <p class="page-hero__lead">That URL is not in the Get Into Robotics library. Try the homepage search or one of the topic collections.</p>
+            <p class="section-kicker">Error 404</p>
+            <h1 class="page-hero__title">This page has left the chat</h1>
+            <p class="page-hero__lead">Our robot searched the stack, the simulator and under the Gazebo. It found nothing but a lonely 404 and a mild sense of existential dread. The good news: the rest of the library is still here.</p>
             <p><a class="btn btn--primary" href="/">Back to the library</a>
-            <a class="btn btn--ghost" href="/faq/">Read the FAQ</a></p>
+            <a class="btn btn--ghost" href="/guides/how-to-learn-robotics/">Start learning instead</a></p>
         </section>
     </main>
 {footer(0)}
