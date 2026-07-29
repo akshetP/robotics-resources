@@ -1,0 +1,33 @@
+{
+  "name": "robotics-resources",
+  "version": "1.0.0",
+  "description": "A curated robotics learning library for every level.",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/generate_seo_pages.py",
+    "build:og": "python3 scripts/generate_og_image.py",
+    "typecheck": "pyright scripts",
+    "lint:html": "html-validate \"index.html\" \"404.html\" \"about/**/*.html\" \"faq/**/*.html\" \"guides/**/*.html\" \"topics/**/*.html\"",
+    "lint:css": "stylelint \"assets/css/**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css",
+    "check:links": "python3 scripts/check_links.py --internal-only",
+    "test": "npm run build && npm run typecheck && npm run lint && npm run check:links"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshetP/robotics-resources.git"
+  },
+  "keywords": [],
+  "author": "Akshet Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akshetP/robotics-resources/issues"
+  },
+  "homepage": "https://github.com/akshetP/robotics-resources#readme",
+  "devDependencies": {
+    "html-validate": "^11.6.0",
+    "pyright": "^1.1.411",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

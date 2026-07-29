@@ -1,1151 +1,923 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A library of robotics resources for every level.">
-    <title>Robotics Resources Library</title>
+    <title>Robotics Resources Library | Get Into Robotics</title>
+    <meta name="description" content="Curated robotics resources for every level: 99 links across open-source projects, ROS and ROS 2, university courses, books, YouTube playlists and simulators.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="author" content="Akshet Patel">
+    <meta name="theme-color" content="#6b21a8">
+    <meta name="keywords" content="robotics resources, learn robotics, ROS 2 tutorials, robotic simulators, open source robotics, free robotics courses">
+    <link rel="canonical" href="https://getintorobotics.com/">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://getintorobotics.com/llms.txt">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://getintorobotics.com/sitemap.xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Get Into Robotics">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Robotics Resources Library | Get Into Robotics">
+    <meta property="og:description" content="Curated robotics resources for every level: projects, ROS and ROS 2, courses, books, YouTube playlists and simulators.">
+    <meta property="og:url" content="https://getintorobotics.com/">
+    <meta property="og:image" content="https://getintorobotics.com/images/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Get Into Robotics: Robotics Resources Library">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robotics Resources Library | Get Into Robotics">
+    <meta name="twitter:description" content="Curated robotics resources for every level: projects, ROS and ROS 2, courses, books and simulators.">
+    <meta name="twitter:image" content="https://getintorobotics.com/images/og-default.png">
+    <meta name="twitter:creator" content="@Akshet9">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
     <link href="assets/img/favicon.png" rel="icon">
-    <script type="text/javascript">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getintorobotics.com/#organization",
+      "name": "Get Into Robotics",
+      "alternateName": "Robotics Resources Library",
+      "url": "https://getintorobotics.com/",
+      "logo": "https://getintorobotics.com/assets/img/favicon.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Akshet Patel",
+        "url": "https://akshetpatel.com/",
+        "sameAs": [
+          "https://github.com/akshetP",
+          "https://linkedin.com/in/akshetpatel",
+          "https://www.youtube.com/@akshetpatel",
+          "https://twitter.com/Akshet9"
+        ]
+      },
+      "sameAs": [
+        "https://github.com/akshetP/robotics-resources",
+        "https://akshetpatel.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://getintorobotics.com/#website",
+      "url": "https://getintorobotics.com/",
+      "name": "Get Into Robotics",
+      "description": "Curated robotics learning library with 99 resources across open-source projects, ROS, courses, books and simulators.",
+      "publisher": {
+        "@id": "https://getintorobotics.com/#organization"
+      },
+      "inLanguage": "en-GB",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://getintorobotics.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://getintorobotics.com/",
+      "url": "https://getintorobotics.com/",
+      "name": "Robotics Resources Library",
+      "description": "A curated library of robotics projects, courses, ROS materials, books and simulators for every level.",
+      "isPartOf": {
+        "@id": "https://getintorobotics.com/#website"
+      },
+      "about": [
+        "robotics",
+        "ROS",
+        "ROS 2",
+        "robotic simulators",
+        "robotics education"
+      ],
+      "dateModified": "2026-07-29",
+      "inLanguage": "en-GB",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Robotics resource collections",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Open-source robotics projects",
+            "url": "https://getintorobotics.com/topics/open-source-robotics-projects/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Learning repositories",
+            "url": "https://getintorobotics.com/topics/learning-repositories/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ROS resources",
+            "url": "https://getintorobotics.com/topics/ros/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "ROS 2 resources",
+            "url": "https://getintorobotics.com/topics/ros-2/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "YouTube channels and playlists",
+            "url": "https://getintorobotics.com/topics/youtube-robotics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Free university courses",
+            "url": "https://getintorobotics.com/topics/university-courses/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Books to learn robotics",
+            "url": "https://getintorobotics.com/topics/robotics-books/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Robotic simulators",
+            "url": "https://getintorobotics.com/topics/robotic-simulators/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://getintorobotics.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Get Into Robotics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Get Into Robotics is a free curated library of robotics learning resources with 99 links across 8 collections, maintained by Akshet Patel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should a beginner start learning robotics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Finish one structured course, practise in a simulator, then reproduce a documented open-source robot demo before buying hardware. Start with the how-to-learn-robotics guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I learn ROS or ROS 2 first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New learners should usually start with ROS 2. Use classic ROS materials when a course or legacy stack still depends on ROS 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which robotic simulator should I try first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gazebo and Webots are common starting points for ROS-centric learning. MuJoCo suits research and reinforcement learning. Isaac Sim suits high-fidelity NVIDIA workflows."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <script>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "rysi5use9x");
     </script>
-    <style>
-        :root {
-            --bg: #f7f3ff;
-            --surface: rgba(255, 255, 255, 0.88);
-            --surface-strong: #ffffff;
-            --text: #261a4a;
-            --muted: #6d6290;
-            --line: rgba(78, 56, 140, 0.14);
-            --brand: #8a63ff;
-            --brand-deep: #6c45df;
-            --brand-soft: rgba(138, 99, 255, 0.12);
-            --shadow: 0 18px 48px rgba(60, 44, 112, 0.12);
-            --radius-xl: 32px;
-            --radius-lg: 22px;
-            --radius-md: 16px;
-            --content-width: 1040px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: "Manrope", sans-serif;
-            color: var(--text);
-            background:
-                radial-gradient(circle at top left, rgba(171, 144, 255, 0.28), transparent 34%),
-                radial-gradient(circle at top right, rgba(214, 194, 255, 0.3), transparent 24%),
-                linear-gradient(180deg, #fcf9ff 0%, #f3ecff 100%);
-        }
-
-        a {
-            color: inherit;
-        }
-
-        .page-shell {
-            width: min(calc(100% - 32px), var(--content-width));
-            margin: 0 auto;
-            padding: 28px 0 56px;
-        }
-
-        .hero {
-            position: relative;
-            overflow: hidden;
-            padding: 34px;
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            border-radius: var(--radius-xl);
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(247, 241, 255, 0.92));
-            box-shadow: var(--shadow);
-            transition: border-color 150ms ease, box-shadow 150ms ease;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: auto -8% -40% auto;
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(138, 99, 255, 0.16), transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero:hover {
-            border-color: rgba(138, 99, 255, 0.18);
-            box-shadow: 0 20px 52px rgba(60, 44, 112, 0.14);
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin: 0 0 14px;
-            padding: 7px 11px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.76);
-            font-size: 0.74rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 1.42fr) minmax(280px, 0.78fr);
-            gap: 24px;
-            align-items: start;
-        }
-
-        .hero h1 {
-            margin: 0;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(2.35rem, 5.4vw, 4.4rem);
-            line-height: 0.92;
-            letter-spacing: -0.06em;
-            max-width: 8.4ch;
-        }
-
-        .hero h1 a {
-            color: var(--brand-deep);
-            text-decoration: none;
-        }
-
-        .lede {
-            max-width: 56ch;
-            margin: 16px 0 0;
-            font-size: 1rem;
-            line-height: 1.68;
-            color: var(--muted);
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .action-link,
-        .github-button-shell {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            min-height: 48px;
-            padding: 0 17px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.8);
-            color: var(--text);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease, color 150ms ease;
-        }
-
-        .action-link:hover,
-        .github-button-shell:hover {
-            border-color: rgba(138, 99, 255, 0.28);
-            background: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 10px 24px rgba(60, 44, 112, 0.08);
-        }
-
-        .action-link.primary {
-            border-color: transparent;
-            background: linear-gradient(135deg, #8a63ff, #a47dff);
-            color: #ffffff;
-            box-shadow: 0 14px 28px rgba(108, 69, 223, 0.2);
-        }
-
-        .hero-card {
-            position: relative;
-            padding: 20px;
-            border: 1px solid var(--line);
-            border-radius: var(--radius-lg);
-            background: rgba(255, 255, 255, 0.9);
-            transition: border-color 150ms ease, box-shadow 150ms ease;
-        }
-
-        .hero-card:hover {
-            border-color: rgba(138, 99, 255, 0.16);
-            box-shadow: 0 14px 32px rgba(60, 44, 112, 0.08);
-        }
-
-        .hero-card h2 {
-            margin: 0;
-            font-size: 0.74rem;
-            font-weight: 800;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-
-        .hero-card p {
-            margin: 12px 0 0;
-            color: var(--muted);
-            line-height: 1.64;
-            font-size: 0.95rem;
-        }
-
-        .metrics {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .metric {
-            padding: 13px;
-            border-radius: var(--radius-md);
-            background: linear-gradient(180deg, rgba(245, 239, 255, 0.98), rgba(255, 255, 255, 0.96));
-            border: 1px solid rgba(138, 99, 255, 0.12);
-            transition: border-color 150ms ease, background-color 150ms ease;
-        }
-
-        .metric:hover {
-            border-color: rgba(138, 99, 255, 0.2);
-        }
-
-        .metric strong {
-            display: block;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 1.28rem;
-            letter-spacing: -0.05em;
-        }
-
-        .metric span {
-            display: block;
-            margin-top: 3px;
-            font-size: 0.82rem;
-            color: var(--muted);
-        }
-
-        .social-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 0;
-            margin: 16px 0 0;
-            list-style: none;
-        }
-
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid var(--line);
-            background: var(--surface-strong);
-            text-decoration: none;
-            color: var(--text);
-            transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
-        }
-
-        .social-icons a:hover {
-            border-color: rgba(138, 99, 255, 0.24);
-            background: rgba(245, 239, 255, 0.96);
-            color: var(--brand-deep);
-        }
-
-        .content {
-            margin-top: 20px;
-        }
-
-        .section-intro {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-end;
-            justify-content: space-between;
-            gap: 14px;
-            margin-bottom: 18px;
-            padding: 0 4px;
-        }
-
-        .section-intro h2 {
-            margin: 0;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(1.7rem, 3.6vw, 2.3rem);
-            letter-spacing: -0.05em;
-        }
-
-        .section-intro p {
-            margin: 0;
-            max-width: 52ch;
-            color: var(--muted);
-            line-height: 1.62;
-            font-size: 0.97rem;
-        }
-
-        .quick-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 0;
-            margin: 14px 0 0;
-            list-style: none;
-        }
-
-        .quick-links a {
-            display: inline-flex;
-            align-items: center;
-            padding: 9px 13px;
-            border-radius: 999px;
-            border: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.74);
-            text-decoration: none;
-            color: var(--muted);
-            font-size: 0.88rem;
-            font-weight: 700;
-            transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
-        }
-
-        .quick-links a:hover {
-            color: var(--brand-deep);
-            border-color: rgba(138, 99, 255, 0.18);
-            background: rgba(255, 255, 255, 0.96);
-        }
-
-        .quick-links a.is-active {
-            color: var(--brand-deep);
-            border-color: rgba(138, 99, 255, 0.2);
-            background: linear-gradient(180deg, rgba(245, 239, 255, 0.98), rgba(255, 255, 255, 0.96));
-        }
-
-        .accordion-stack {
-            display: grid;
-            gap: 12px;
-        }
-
-        .resource-section {
-            border: 1px solid var(--line);
-            border-radius: var(--radius-lg);
-            background: rgba(255, 255, 255, 0.82);
-            box-shadow: 0 10px 24px rgba(60, 44, 112, 0.06);
-            overflow: hidden;
-            transition: border-color 150ms ease, box-shadow 150ms ease;
-        }
-
-        .resource-section:hover {
-            box-shadow: 0 14px 32px rgba(60, 44, 112, 0.08);
-            border-color: rgba(138, 99, 255, 0.14);
-        }
-
-        .accordion {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            width: 100%;
-            padding: 19px 22px;
-            border: 0;
-            background: transparent;
-            color: var(--text);
-            text-align: left;
-            cursor: pointer;
-            transition: background-color 180ms ease;
-        }
-
-        .accordion:hover {
-            background: rgba(138, 99, 255, 0.04);
-        }
-
-        .accordion:hover .accordion-icon {
-            border-color: rgba(138, 99, 255, 0.18);
-        }
-
-        .accordion-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 42px;
-            height: 42px;
-            flex: 0 0 42px;
-            border-radius: 12px;
-            background: linear-gradient(180deg, rgba(245, 239, 255, 0.98), rgba(255, 255, 255, 0.96));
-            border: 1px solid rgba(138, 99, 255, 0.12);
-            color: var(--brand-deep);
-            transition: border-color 150ms ease, background-color 150ms ease;
-        }
-
-        .accordion-copy {
-            min-width: 0;
-            flex: 1;
-        }
-
-        .accordion-copy strong {
-            display: block;
-            font-size: 0.98rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        .accordion-copy span {
-            display: block;
-            margin-top: 3px;
-            color: var(--muted);
-            font-size: 0.88rem;
-            line-height: 1.55;
-        }
-
-        .accordion-meta {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-left: auto;
-        }
-
-        .accordion-count {
-            padding: 6px 11px;
-            border-radius: 999px;
-            background: rgba(16, 35, 63, 0.06);
-            color: var(--muted);
-            font-size: 0.79rem;
-            font-weight: 800;
-            white-space: nowrap;
-            transition: background-color 180ms ease, color 180ms ease;
-        }
-
-        .accordion:hover .accordion-count {
-            background: var(--brand-soft);
-            color: var(--brand-deep);
-        }
-
-        .accordion-caret {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: rgba(16, 35, 63, 0.06);
-            color: var(--muted);
-            transition: transform 180ms ease, background-color 180ms ease;
-        }
-
-        .accordion[aria-expanded="true"] .accordion-caret {
-            transform: rotate(180deg);
-            background: rgba(138, 99, 255, 0.12);
-            color: var(--brand-deep);
-        }
-
-        .panel {
-            padding: 0 22px 22px;
-        }
-
-        .panel[hidden] {
-            display: none;
-        }
-
-        .panel-inner {
-            padding: 18px;
-            border-radius: var(--radius-md);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 244, 255, 0.96));
-            border: 1px solid rgba(78, 56, 140, 0.08);
-        }
-
-        .resource-list {
-            display: grid;
-            gap: 10px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .resource-list li {
-            margin: 0;
-        }
-
-        .resource-list a {
-            display: block;
-            padding: 12px 14px;
-            border-radius: 14px;
-            background: var(--surface-strong);
-            border: 1px solid rgba(78, 56, 140, 0.08);
-            color: var(--brand-deep);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            line-height: 1.45;
-            transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
-        }
-
-        .resource-list a:hover {
-            border-color: rgba(138, 99, 255, 0.18);
-            background: linear-gradient(180deg, #ffffff, #faf6ff);
-            box-shadow: 0 10px 22px rgba(60, 44, 112, 0.06);
-        }
-
-        .subsection + .subsection {
-            margin-top: 18px;
-        }
-
-        .subsection h3 {
-            margin: 0 0 10px;
-            font-size: 0.76rem;
-            font-weight: 800;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-
-        .site-footer {
-            position: relative;
-            overflow: hidden;
-            display: grid;
-            grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(180px, 0.8fr));
-            gap: 22px;
-            margin-top: 24px;
-            padding: 24px;
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--line);
-            background: linear-gradient(145deg, rgba(54, 34, 107, 0.96), rgba(89, 58, 163, 0.94));
-            box-shadow: 0 18px 44px rgba(48, 31, 94, 0.18);
-            color: rgba(245, 248, 255, 0.86);
-        }
-
-        .site-footer::after {
-            content: "";
-            position: absolute;
-            inset: auto -80px -120px auto;
-            width: 260px;
-            height: 260px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(199, 180, 255, 0.22), transparent 70%);
-            pointer-events: none;
-        }
-
-        .site-footer p,
-        .site-footer a {
-            position: relative;
-            z-index: 1;
-        }
-
-        .footer-brand h3 {
-            margin: 0;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: clamp(1.3rem, 2.2vw, 1.8rem);
-            letter-spacing: -0.05em;
-            color: #ffffff;
-        }
-
-        .footer-brand p {
-            margin: 10px 0 0;
-            max-width: 38ch;
-            line-height: 1.62;
-            font-size: 0.95rem;
-        }
-
-        .footer-section h4 {
-            margin: 0 0 10px;
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: rgba(230, 220, 255, 0.76);
-        }
-
-        .footer-links {
-            display: grid;
-            gap: 8px;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.88);
-            text-decoration: none;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            transition: color 150ms ease;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-
-        .footer-social {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 0;
-            margin: 14px 0 0;
-            list-style: none;
-        }
-
-        .footer-social a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            background: rgba(255, 255, 255, 0.06);
-            color: #ffffff;
-            text-decoration: none;
-            transition: background-color 150ms ease, border-color 150ms ease;
-        }
-
-        .footer-social a:hover {
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.24);
-        }
-
-        .footer-meta {
-            grid-column: 1 / -1;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            padding-top: 16px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(216, 228, 255, 0.72);
-            font-size: 0.88rem;
-        }
-
-        .footer-meta p {
-            margin: 0;
-        }
-
-        @media (max-width: 900px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .site-footer {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 720px) {
-            .page-shell {
-                width: min(calc(100% - 20px), var(--content-width));
-                padding: 16px 0 36px;
-            }
-
-            .hero {
-                padding: 22px;
-                border-radius: 24px;
-            }
-
-            .hero h1 {
-                max-width: none;
-                font-size: clamp(2.2rem, 12vw, 3.6rem);
-            }
-
-            .lede {
-                font-size: 0.98rem;
-            }
-
-            .metrics {
-                grid-template-columns: 1fr;
-            }
-
-            .section-intro {
-                padding: 0;
-            }
-
-            .accordion {
-                flex-wrap: wrap;
-                padding: 17px;
-            }
-
-            .accordion-meta {
-                width: 100%;
-                justify-content: space-between;
-            }
-
-            .panel {
-                padding: 0 17px 17px;
-            }
-
-            .panel-inner {
-                padding: 15px;
-            }
-
-            .resource-list a {
-                padding: 12px 13px;
-            }
-
-            .site-footer {
-                grid-template-columns: 1fr;
-                padding: 22px;
-                border-radius: 24px;
-            }
-
-            .footer-meta {
-                align-items: flex-start;
-                justify-content: flex-start;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation: none !important;
-                transition-duration: 0.01ms !important;
-                transition-delay: 0ms !important;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="page-shell">
-        <header class="hero">
-            <p class="eyebrow">Curated robotics learning hub</p>
-            <div class="hero-grid">
-                <div>
-                    <h1>Robotics resources by <a href="https://akshetpatel.com/" target="_blank" rel="noopener noreferrer">Akshet Patel</a>.</h1>
-                    <!-- <p class="lede">A cleaner, faster way to browse robotics material across open-source projects, ROS, books, simulators, videos, and university courses. Everything stays in one place, organized into scannable categories that work well on phones and larger screens.</p> -->
-                    <div class="hero-actions">
-                        <a class="action-link primary" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View repository</a>
-                        <a class="action-link" href="https://akshetpatel.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Visit website</a>
-                        <span class="github-button-shell">
-                            <a class="github-button" href="https://github.com/akshetP/robotics-resources" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star akshetP/robotics-resources on GitHub">Star the repo</a>
-                        </span>
-                    </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="layout">
+            <div class="site-header__bar">
+                <a class="brand" href="/" aria-label="Get Into Robotics home">
+                    <span class="brand__mark" aria-hidden="true"><i class="fas fa-robot" aria-hidden="true"></i></span>
+                    <span class="brand__text">Get Into Robotics</span>
+                </a>
+
+                <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                    <a class="nav-link" href="#library" aria-current="page">Library</a>
+                    <a class="nav-link" href="topics/open-source-robotics-projects/">Topics</a>
+                    <a class="nav-link" href="guides/how-to-learn-robotics/">Guides</a>
+                    <a class="nav-link" href="faq/">FAQ</a>
+                    <a class="nav-link" href="about/">About</a>
+                    <a class="nav-link nav-link--mobile-only" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">GitHub repository</a>
+                </nav>
+
+                <div class="site-header__actions">
+                    <a class="btn btn--primary" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>Star</span>
+                    </a>
+                    <button class="btn btn--icon nav-toggle" id="nav-toggle" type="button"
+                            aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
                 </div>
-
-                <aside class="hero-card">
-                    <h2>What you get</h2>
-                    <div class="metrics">
-                        <div class="metric">
-                            <strong>8</strong>
-                            <span>Collections</span>
-                        </div>
-                        <div class="metric">
-                            <strong>80+</strong>
-                            <span>Curated links</span>
-                        </div>
-                        <div class="metric">
-                            <strong>All levels</strong>
-                            <span>Beginner to advanced</span>
-                        </div>
-                    </div>
-                    <!-- <p>Use the quick category links or expand a section to browse. The layout favors high contrast, cleaner spacing, and lightweight interactions instead of heavy frameworks.</p> -->
-                    <ul class="social-icons">
-                        <li><a href="https://www.instagram.com/akshet.patel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com/Akshet9" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://github.com/akshetP" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://upbrandly.com/" target="_blank" rel="noopener noreferrer" aria-label="Books"><i class="fas fa-book-open"></i></a></li>
-                    </ul>
-                </aside>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="content">
-            <section class="section-intro" aria-labelledby="browse-heading">
-                <div>
-                    <ul class="quick-links">
-                        <li><a href="#open-source-projects">Open source</a></li>
-                        <li><a href="#learn-robotics">Learning repos</a></li>
-                        <li><a href="#ros-resources">ROS</a></li>
-                        <li><a href="#ros2-resources">ROS 2</a></li>
-                        <li><a href="#youtube-resources">YouTube</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#books">Books</a></li>
-                        <li><a href="#simulators">Simulators</a></li>
-                    </ul>
+    <main class="layout" id="main" tabindex="-1">
+        <section class="hero col-content" aria-labelledby="hero-title">
+            <p class="section-kicker">Curated robotics learning hub</p>
+            <h1 class="hero__title" id="hero-title">
+                Robotics resources by <a href="https://akshetpatel.com/" target="_blank" rel="noopener">Akshet Patel</a>
+            </h1>
+            <p class="hero__lead">Get Into Robotics is a free curated library of 99 robotics links across 8 collections: open-source projects, learning repositories, ROS, ROS 2, YouTube, university courses, books and simulators.</p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">
+                    <i class="fab fa-github" aria-hidden="true"></i> Star this repository
+                </a>
+                <a class="btn btn--ghost" href="#library">
+                    Browse the library <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn--ghost" href="guides/how-to-learn-robotics/">
+                    How to learn robotics <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <ul class="icon-links" aria-label="Social profiles">
+                <li><a href="https://www.facebook.com/akshet.patel.14/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/akshet.patel/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Akshet9" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/akshetP" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://upbrandly.com/" target="_blank" rel="noopener" aria-label="Upbrandly"><i class="fas fa-book-open" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="col-content" aria-labelledby="answer-title">
+            <div class="answer-card">
+                <p class="answer-card__label">Direct answer</p>
+                <h2 class="answer-card__title" id="answer-title">What is the best place to start learning robotics online?</h2>
+                <p class="answer-card__body">Start with one free university course, practise in a robotic simulator, then clone a small open-source robot project. Add ROS 2 tutorials once you can run a documented demo. This library groups those starting points so you do not have to invent the path yourself.</p>
+            </div>
+            <ul class="stats" aria-label="Library statistics">
+                <li class="stat"><span class="stat__value">8</span><p class="stat__label">Topic collections</p></li>
+                <li class="stat"><span class="stat__value">99</span><p class="stat__label">Curated links</p></li>
+                <li class="stat"><span class="stat__value">All</span><p class="stat__label">Beginner to advanced</p></li>
+            </ul>
+        </section>
+
+        <section class="col-content" aria-labelledby="topics-title">
+            <p class="section-kicker">Topic pages</p>
+            <h2 class="section-head__title" id="topics-title">Explore by topic</h2>
+            <p class="section-head__meta section-head__meta--spaced">Dedicated pages for answer engines and searchers who want one collection at a time.</p>
+            <ul class="topic-grid">
+                <li><a class="topic-card" href="topics/open-source-robotics-projects/"><h3 class="topic-card__title">Open-source projects</h3><p class="topic-card__meta">15 platforms and robot stacks</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/learning-repositories/"><h3 class="topic-card__title">Learning repositories</h3><p class="topic-card__meta">15 GitHub study collections</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/ros/"><h3 class="topic-card__title">ROS resources</h3><p class="topic-card__meta">8 university and community lists</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/ros-2/"><h3 class="topic-card__title">ROS 2 resources</h3><p class="topic-card__meta">5 beginner-friendly playlists</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/youtube-robotics/"><h3 class="topic-card__title">YouTube robotics</h3><p class="topic-card__meta">21 channels and playlists</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/university-courses/"><h3 class="topic-card__title">University courses</h3><p class="topic-card__meta">8 free structured courses</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/robotics-books/"><h3 class="topic-card__title">Robotics books</h3><p class="topic-card__meta">6 ROS-focused titles</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+                <li><a class="topic-card" href="topics/robotic-simulators/"><h3 class="topic-card__title">Robotic simulators</h3><p class="topic-card__meta">21 simulation environments</p><span class="topic-card__chevron" aria-hidden="true"><i class="fas fa-chevron-right" aria-hidden="true"></i></span></a></li>
+            </ul>
+            <p class="link-row"><a href="guides/how-to-learn-robotics/">How to learn robotics</a> · <a href="guides/getting-started-with-ros-2/">Getting started with ROS 2</a> · <a href="faq/">FAQ</a></p>
+        </section>
+
+        <section class="library col-content" id="library" aria-labelledby="library-title">
+            <div class="section-head">
+                <h2 class="section-head__title" id="library-title">Browse the library</h2>
+                <p class="section-head__meta"><span id="total-count">99</span> resources across 8 categories.</p>
+            </div>
+
+            <div class="toolbar">
+                <form class="search" role="search" id="search-form">
+                    <label class="search__label" for="resource-search">Search resources</label>
+                    <div class="search__control">
+                        <i class="fas fa-search search__icon" aria-hidden="true"></i>
+                        <input class="search__input" id="resource-search" type="search" name="q"
+                               placeholder="e.g. ROS 2, simulator, MIT" autocomplete="off"
+                               aria-describedby="search-hint">
+                        <button class="search__clear" id="search-clear" type="button" aria-label="Clear search" hidden>
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <p class="search__hint" id="search-hint">Filters every category as you type.</p>
+                    <button type="submit" hidden>Search resources</button>
+                </form>
+
+                <div class="toolbar__meta">
+                    <p class="toolbar__status" id="search-status" role="status"></p>
+                    <button class="btn btn--ghost" id="toggle-all" type="button" data-state="closed">
+                        <span class="toggle-all__text">Expand all</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
                 </div>
-            </section>
-
-            <div class="accordion-stack">
-                <section class="resource-section" id="open-source-projects">
-                    <button class="accordion" type="button" aria-expanded="true" aria-controls="panel-open-source-projects">
-                        <span class="accordion-icon"><i class="fas fa-cogs"></i></span>
-                        <span class="accordion-copy">
-                            <strong>Open Source Robotics Projects</strong>
-                            <span>Robots, platforms, hardware ecosystems, and open-source vehicle stacks.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">15 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-open-source-projects">
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://github.com/duckietown" target="_blank" rel="noopener noreferrer">Duckietown</a></li>
-                                <li><a href="https://github.com/rigbetellabs/tortoisebot" target="_blank" rel="noopener noreferrer">TortoiseBot</a></li>
-                                <li><a href="https://rosblox.github.io/" target="_blank" rel="noopener noreferrer">ROSbloX</a></li>
-                                <li><a href="https://github.com/Ekumen-OS/andino" target="_blank" rel="noopener noreferrer">andino</a></li>
-                                <li><a href="https://github.com/nasa-jpl/open-source-rover#getting-started" target="_blank" rel="noopener noreferrer">Open-Source Rover by NASA Jet Propulsion Laboratory</a></li>
-                                <li><a href="https://f1tenth.org/learn.html" target="_blank" rel="noopener noreferrer">F1TENTH</a></li>
-                                <li><a href="https://github.com/autowarefoundation" target="_blank" rel="noopener noreferrer">The Autoware Foundation</a></li>
-                                <li><a href="https://github.com/OpenPodcar/OpenPodcar" target="_blank" rel="noopener noreferrer">OpenPodCar</a></li>
-                                <li><a href="https://minipupperdocs.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer">Mini Pupper</a></li>
-                                <li><a href="https://github.com/PENS-EROS" target="_blank" rel="noopener noreferrer">EROS - 1</a></li>
-                                <li><a href="https://markwtech.com/robots/hexapod/" target="_blank" rel="noopener noreferrer">Hexapod</a></li>
-                                <li><a href="https://github.com/babycommando/machinascript-for-robots" target="_blank" rel="noopener noreferrer">machinascript-for-robots</a></li>
-                                <li><a href="https://ompl.kavrakilab.org/" target="_blank" rel="noopener noreferrer">The Open Motion Planning Library</a></li>
-                                <li><a href="https://github.com/marginallyclever/robot-overlord-app" target="_blank" rel="noopener noreferrer">Robot-Overlord-App</a></li>
-                                <li><a href="https://www.openrobothardware.org/linkedprojects/" target="_blank" rel="noopener noreferrer">Find more projects here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="learn-robotics">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-learn-robotics">
-                        <span class="accordion-icon"><i class="fas fa-book"></i></span>
-                        <span class="accordion-copy">
-                            <strong>GitHub Repositories to Learn Robotics</strong>
-                            <span>Collections of papers, tutorials, coursework, mobile robotics, and machine learning for robotics.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">15 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-learn-robotics" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://github.com/ColinShaw/robotics-and-machine-vision-resources#interesting-and-relevant-articles" target="_blank" rel="noopener noreferrer">Robotics Research Papers</a></li>
-                                <li><a href="https://github.com/Phylliade/awesome-machine-learning-robotics" target="_blank" rel="noopener noreferrer">Machine Learning for Robotics</a></li>
-                                <li><a href="https://github.com/kiloreux/awesome-robotics" target="_blank" rel="noopener noreferrer">Books, Courses &amp; Software</a></li>
-                                <li><a href="https://github.com/AtsushiSakai/PythonRobotics" target="_blank" rel="noopener noreferrer">PythonRobotics</a></li>
-                                <li><a href="https://github.com/joshnewans/robotics_resources" target="_blank" rel="noopener noreferrer">robotics_resources</a></li>
-                                <li><a href="https://github.com/kfupmRoboticsClub/learn-Robotics/tree/main" target="_blank" rel="noopener noreferrer">Learn Robotics - Beginner, Moderate &amp; Advanced</a></li>
-                                <li><a href="https://github.com/gtbook/robotics" target="_blank" rel="noopener noreferrer">Introduction to Robotics and Perception</a></li>
-                                <li><a href="https://github.com/mithi/robotics-coursework" target="_blank" rel="noopener noreferrer">Robotics Courses</a></li>
-                                <li><a href="https://github.com/carlosmccosta/dynamic_robot_localization" target="_blank" rel="noopener noreferrer">Dynamic Robot Localization</a></li>
-                                <li><a href="https://github.com/mathiasmantelli/awesome-mobile-robotics" target="_blank" rel="noopener noreferrer">Awesome Mobile Robotics</a></li>
-                                <li><a href="https://github.com/addy1997/Robotics-Resources" target="_blank" rel="noopener noreferrer">Robotics Resources</a></li>
-                                <li><a href="https://github.com/robotframework/robotframework" target="_blank" rel="noopener noreferrer">Robot Framework</a></li>
-                                <li><a href="https://github.com/Phylliade/awesome-machine-learning-robotics" target="_blank" rel="noopener noreferrer">Awesome Machine Learning for Robotics</a></li>
-                                <li><a href="https://github.com/ColinShaw/robotics-and-machine-vision-resources" target="_blank" rel="noopener noreferrer">Robotics And Machine Vision Resources</a></li>
-                                <li><a href="https://github.com/kiloreux/awesome-robotics" target="_blank" rel="noopener noreferrer">Awesome Robotics</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="ros-resources">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-ros-resources">
-                        <span class="accordion-icon"><i class="fas fa-robot"></i></span>
-                        <span class="accordion-copy">
-                            <strong>ROS Resources</strong>
-                            <span>University materials, community lists, and ROS-focused reference collections.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">8 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-ros-resources" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://ocw.tudelft.nl/courses/hello-real-world-ros-robot-operating-system/" target="_blank" rel="noopener noreferrer">By Delft University of Technology, Netherlands</a></li>
-                                <li><a href="https://rsl.ethz.ch/education-students/lectures/ros.html" target="_blank" rel="noopener noreferrer">By ETH Zurich, Switzerland</a></li>
-                                <li><a href="https://web.ics.purdue.edu/~rvoyles/Classes/ROSprogramming/index.html" target="_blank" rel="noopener noreferrer">By Purdue University, USA</a></li>
-                                <li><a href="https://sir.upc.edu/projects/rostutorials/" target="_blank" rel="noopener noreferrer">By Universitat Politecnica de Catalunya, Barcelona</a></li>
-                                <li><a href="https://automatika.etf.bg.ac.rs/sr/13e054trs" target="_blank" rel="noopener noreferrer">By University of Belgrade, Serbia</a></li>
-                                <li><a href="https://github.com/cse481sp17/cse481c/wiki" target="_blank" rel="noopener noreferrer">By University of Washington, USA</a></li>
-                                <li><a href="https://github.com/vmayoral/ros-robotics-companies" target="_blank" rel="noopener noreferrer">Companies working with ROS</a></li>
-                                <li><a href="https://github.com/ps-micro/awesome-ros" target="_blank" rel="noopener noreferrer">awesome-ros</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="ros2-resources">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-ros2-resources">
-                        <span class="accordion-icon"><i class="fas fa-satellite"></i></span>
-                        <span class="accordion-copy">
-                            <strong>ROS 2 Resources</strong>
-                            <span>Crash courses, beginner playlists, and self-driving stacks built around ROS 2.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">5 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-ros2-resources" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://www.youtube.com/playlist?list=PLRE44FoOoKf7NzWwxt3W2taZ7BiWyfhCp" target="_blank" rel="noopener noreferrer">ROS2 Tutorial for Beginners (Foxy)</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=Gg25GfA456o" target="_blank" rel="noopener noreferrer">ROS2 Tutorial - ROS2 Humble 2H50 [Crash Course]</a></li>
-                                <li><a href="https://www.youtube.com/playlist?list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy" target="_blank" rel="noopener noreferrer">ROS2 Tutorials - ROS2 Humble For Beginners</a></li>
-                                <li><a href="https://www.youtube.com/playlist?list=PLL57Sz4fhxLpCXgN0lvCF7aHAlRA5FoFr" target="_blank" rel="noopener noreferrer">Self-Driving Cars with ROS 2 &amp; Autoware</a></li>
-                                <li><a href="https://www.youtube.com/playlist?list=PLNw2RD-1J5YZbyWXCpas9zPJldfphPi4Q" target="_blank" rel="noopener noreferrer">ROS2 Tutorials</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="youtube-resources">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-youtube-resources">
-                        <span class="accordion-icon"><i class="fab fa-youtube"></i></span>
-                        <span class="accordion-copy">
-                            <strong>YouTube Channels &amp; Playlists to Learn Robotics</strong>
-                            <span>Trusted channels and lecture series grouped separately for faster browsing.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">21 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-youtube-resources" hidden>
-                        <div class="panel-inner">
-                            <div class="subsection">
-                                <h3>Channels</h3>
-                                <ul class="resource-list">
-                                    <li><a href="https://www.youtube.com/@duckietown" target="_blank" rel="noopener noreferrer">Duckietown</a></li>
-                                    <li><a href="https://www.youtube.com/@LearnRobotics" target="_blank" rel="noopener noreferrer">LearnRobotics by Liz Miller</a></li>
-                                    <li><a href="https://www.youtube.com/@aniskoubaa2327" target="_blank" rel="noopener noreferrer">aniskoubaa2327 by Anis Koubaa</a></li>
-                                    <li><a href="https://www.youtube.com/@ArticulatedRobotics" target="_blank" rel="noopener noreferrer">ArticulatedRobotics by Articulated Robotics</a></li>
-                                    <li><a href="https://www.youtube.com/@Dronebotworkshop" target="_blank" rel="noopener noreferrer">Dronebotworkshop</a></li>
-                                    <li><a href="https://www.youtube.com/@HashRobotics" target="_blank" rel="noopener noreferrer">HashRobotics</a></li>
-                                    <li><a href="https://www.youtube.com/@jamesbruton" target="_blank" rel="noopener noreferrer">James Bruton</a></li>
-                                    <li><a href="https://www.youtube.com/@mecharithm-robotics" target="_blank" rel="noopener noreferrer">Mecharithm - Robotics and Mechatronics</a></li>
-                                    <li><a href="https://www.youtube.com/@ROBOMECHTRIX" target="_blank" rel="noopener noreferrer">Robomechtrix</a></li>
-                                    <li><a href="https://www.youtube.com/@RoboticsBackEnd" target="_blank" rel="noopener noreferrer">RoboticsBackEnd</a></li>
-                                </ul>
-                            </div>
-                            <div class="subsection">
-                                <h3>Playlists</h3>
-                                <ul class="resource-list">
-                                    <li><a href="https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH" target="_blank" rel="noopener noreferrer">Robotics 501: Mathematics for Robotics</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLyqSpQzTE6M_XM9cvjLLO_Azt1FkgPhpH" target="_blank" rel="noopener noreferrer">Introduction to Robotics</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLkx8KyIQkMfWr191lqbN8WfV08j-ui8WX" target="_blank" rel="noopener noreferrer">Robotic Manipulation, Fall 2023</a></li>
-                                    <li><a href="https://www.youtube.com/watch?v=_1CtAHVea8I&amp;list=PLkx8KyIQkMfUmB3j-DyP58ThDXM7enA8x" target="_blank" rel="noopener noreferrer">Underactuated Robotics, Spring 2021</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62Bkdzwe7caTZC7soj7ZYvk" target="_blank" rel="noopener noreferrer">Cognitive Robotics, Spring 2016</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLCFD85BC79FE703DF" target="_blank" rel="noopener noreferrer">Robotics Institute Seminar Series</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLZnJoM76RM6ItAfZIxJYNKdaR_BobleLY" target="_blank" rel="noopener noreferrer">Robot Dynamics 2022</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa" target="_blank" rel="noopener noreferrer">Optimal Control 2023</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PL4847E1D1C121292F" target="_blank" rel="noopener noreferrer">Introduction to Robotics Course</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx" target="_blank" rel="noopener noreferrer">Modern Robotics by Northwestern University</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_" target="_blank" rel="noopener noreferrer">Robotics by Indian Institute of Technology, Kharagpur</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="courses">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-courses">
-                        <span class="accordion-icon"><i class="fas fa-chalkboard"></i></span>
-                        <span class="accordion-copy">
-                            <strong>Free University Courses</strong>
-                            <span>Strong starting points for structured learning from universities and labs.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">8 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-courses" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://duckietown.com/mooc/" target="_blank" rel="noopener noreferrer">Self-Driving Cars with Duckietown</a></li>
-                                <li><a href="https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/" target="_blank" rel="noopener noreferrer">Introduction To Robotics by Massachusetts Institute of Technology</a></li>
-                                <li><a href="https://robotacademy.net.au/" target="_blank" rel="noopener noreferrer">QUT Robot Academy by QUT (Queensland University of Technology)</a></li>
-                                <li><a href="https://see.stanford.edu/Course/CS223A" target="_blank" rel="noopener noreferrer">Introduction to Robotics by Stanford University</a></li>
-                                <li><a href="http://ais.informatik.uni-freiburg.de/teaching/ss16/robotics/index_en.php" target="_blank" rel="noopener noreferrer">Introduction to Mobile Robotics by The University of Freiburg</a></li>
-                                <li><a href="https://www.youtube.com/user/StanfordCS235/videos" target="_blank" rel="noopener noreferrer">Applied robot design by Stanford University</a></li>
-                                <li><a href="https://underactuated.csail.mit.edu/index.html" target="_blank" rel="noopener noreferrer">Underactuated Robotics by MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)</a></li>
-                                <li><a href="https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/" target="_blank" rel="noopener noreferrer">Advanced Robotics by University of California, Berkeley</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="books">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-books">
-                        <span class="accordion-icon"><i class="fas fa-book-open"></i></span>
-                        <span class="accordion-copy">
-                            <strong>Books to Learn Robotics</strong>
-                            <span>Core ROS and robotics programming books available as online PDFs.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">6 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-books" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://sceweb.sce.uhcl.edu/harman/CENG5437_MobileRobots/Webitems2020/ROS_ROBOTICS_BY_EXAMPLE_SECOND_EDITION.pdf" target="_blank" rel="noopener noreferrer">ROS Robotics by Example</a></li>
-                                <li><a href="https://www.pishrobot.com/wp-content/uploads/2021/05/ros-robot-programming-book-by-turtlebo3-developers-en.pdf" target="_blank" rel="noopener noreferrer">ROS Robot Programming</a></li>
-                                <li><a href="https://github.com/fjibj/ROSplay/blob/master/Learning%20ROS%20for%20Robotics%20Programming%20-%20Second%20Edition.pdf" target="_blank" rel="noopener noreferrer">Learning ROS for Robotics Programming</a></li>
-                                <li><a href="https://jokane.net/agitr/agitr-letter.pdf" target="_blank" rel="noopener noreferrer">A Gentle Introduction to ROS</a></li>
-                                <li><a href="http://alvarestech.com/temp/capp/GDT_Forma3D/Programming%20Robots%20with%20ROS%20by%20Morgan%20Quigley,%20Brian%20Gerkey,%20William%20D.%20Smart%20(z-lib.org).pdf" target="_blank" rel="noopener noreferrer">Programming Robots with ROS</a></li>
-                                <li><a href="http://wiki.iranros.com/wp-content/uploads/2019/10/Lentin-Joseph-Robot-Operating-SystemROSfor-Absolute-Beginners_IRANROS.COM2018.pdf" target="_blank" rel="noopener noreferrer">Robot Operating System for Absolute Beginners</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resource-section" id="simulators">
-                    <button class="accordion" type="button" aria-expanded="false" aria-controls="panel-simulators">
-                        <span class="accordion-icon"><i class="fas fa-satellite-dish"></i></span>
-                        <span class="accordion-copy">
-                            <strong>Robotic Simulators</strong>
-                            <span>Simulation, digital twins, industrial tools, and general robotics environments.</span>
-                        </span>
-                        <span class="accordion-meta">
-                            <span class="accordion-count">21 links</span>
-                            <span class="accordion-caret"><i class="fas fa-chevron-down"></i></span>
-                        </span>
-                    </button>
-                    <div class="panel" id="panel-simulators" hidden>
-                        <div class="panel-inner">
-                            <ul class="resource-list">
-                                <li><a href="https://github.com/duckietown/gym-duckietown" target="_blank" rel="noopener noreferrer">gym-duckietown</a></li>
-                                <li><a href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener noreferrer">NVIDIA Isaac Sim</a></li>
-                                <li><a href="https://classic.gazebosim.org/" target="_blank" rel="noopener noreferrer">Gazebo by Open Robotics</a></li>
-                                <li><a href="https://robodk.com/" target="_blank" rel="noopener noreferrer">RoboDK</a></li>
-                                <li><a href="https://cyberbotics.com/" target="_blank" rel="noopener noreferrer">Webots</a></li>
-                                <li><a href="https://coppeliarobotics.com/" target="_blank" rel="noopener noreferrer">CoppeliaSim</a></li>
-                                <li><a href="https://aws.amazon.com/robomaker/" target="_blank" rel="noopener noreferrer">AWS RoboMaker</a></li>
-                                <li><a href="https://morse-simulator.github.io/" target="_blank" rel="noopener noreferrer">MORSE</a></li>
-                                <li><a href="https://uk.mathworks.com/products/simscape.html" target="_blank" rel="noopener noreferrer">Simscape</a></li>
-                                <li><a href="https://www.algoryx.se/agx-dynamics/" target="_blank" rel="noopener noreferrer">AGX Dynamics</a></li>
-                                <li><a href="https://www.cenit.com/en_EN/solutions-services/software-solutions/fastsuite-edition-2.html" target="_blank" rel="noopener noreferrer">Cenit FastSuite Edition 2</a></li>
-                                <li><a href="https://www.3ds.com/products/delmia/industrial-engineering/robotics" target="_blank" rel="noopener noreferrer">Dassault Systemes 3D Experience</a></li>
-                                <li><a href="https://openmodelica.org/" target="_blank" rel="noopener noreferrer">Open Modelica</a></li>
-                                <li><a href="https://plm.sw.siemens.com/en-US/nx/manufacturing/robotic-machining-programming/" target="_blank" rel="noopener noreferrer">Siemens Robotics</a></li>
-                                <li><a href="https://new.abb.com/products/robotics/robotstudio" target="_blank" rel="noopener noreferrer">ABB Robot Studio</a></li>
-                                <li><a href="https://realvirtual.io/" target="_blank" rel="noopener noreferrer">realvirtual.io</a></li>
-                                <li><a href="https://www.digifai.com/en/twin/" target="_blank" rel="noopener noreferrer">twin</a></li>
-                                <li><a href="https://github.com/google-deepmind/mujoco" target="_blank" rel="noopener noreferrer">mujoco</a></li>
-                                <li><a href="https://www.visualcomponents.com/" target="_blank" rel="noopener noreferrer">Visual Components</a></li>
-                                <li><a href="https://unity.com/" target="_blank" rel="noopener noreferrer">Unity</a></li>
-                                <li><a href="https://easy-rob.com/" target="_blank" rel="noopener noreferrer">EASY-ROB</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
             </div>
-        </main>
 
-        <footer class="site-footer" aria-label="Site footer">
-            <section class="footer-brand">
-                <h3>Robotics Resources Library</h3>
-                <p>A professional, lightweight directory for robotics learners, builders, and researchers. Explore curated resources across software, hardware, ROS, simulation, and foundational learning material.</p>
-                <ul class="footer-social">
-                    <li><a href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener noreferrer" aria-label="Repository on GitHub"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://akshetpatel.com/" target="_blank" rel="noopener noreferrer" aria-label="Website"><i class="fas fa-globe"></i></a></li>
-                </ul>
-            </section>
+            <div class="disclosure-list" id="disclosure-list">
 
-            <section class="footer-section">
-                <h4>Browse</h4>
-                <ul class="footer-links">
-                    <li><a href="#open-source-projects">Open source projects</a></li>
-                    <li><a href="#learn-robotics">Learning repositories</a></li>
-                    <li><a href="#ros-resources">ROS resources</a></li>
-                    <li><a href="#simulators">Simulators</a></li>
-                </ul>
-            </section>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-cogs disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">Open Source Robotics Projects GitHub Repositories</span>
+                            <span class="disclosure__count" data-count>15</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://github.com/duckietown" target="_blank" rel="noopener">Duckietown <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/rigbetellabs/tortoisebot" target="_blank" rel="noopener">TortoiseBot <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://rosblox.github.io/" target="_blank" rel="noopener">ROSbloX <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/Ekumen-OS/andino" target="_blank" rel="noopener">andino <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/nasa-jpl/open-source-rover#getting-started" target="_blank" rel="noopener">Open-Source Rover by NASA Jet Propulsion Laboratory <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://roboracer.ai/" target="_blank" rel="noopener">F1TENTH <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/autowarefoundation" target="_blank" rel="noopener">The Autoware Foundation <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/OpenPodcar/OpenPodcar" target="_blank" rel="noopener">OpenPodCar <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://minipupperdocs.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">Mini Pupper <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/PENS-EROS" target="_blank" rel="noopener">EROS - 1 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://markwtech.com/robots/hexapod/" target="_blank" rel="noopener">Hexapod <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/babycommando/machinascript-for-robots" target="_blank" rel="noopener">machinascript-for-robots <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://ompl.kavrakilab.org/" target="_blank" rel="noopener">The Open Motion Planning Library <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/marginallyclever/robot-overlord-app" target="_blank" rel="noopener">Robot-Overlord-App <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.openrobothardware.org/linkedprojects/" target="_blank" rel="noopener">Find more projects here <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
 
-            <section class="footer-section">
-                <h4>Connect</h4>
-                <ul class="footer-links">
-                    <li><a href="https://akshetpatel.com/" target="_blank" rel="noopener noreferrer">akshetpatel.com</a></li>
-                    <li><a href="https://github.com/akshetP" target="_blank" rel="noopener noreferrer">GitHub profile</a></li>
-                    <li><a href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener noreferrer">Contribute to this list</a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-book disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">GitHub Repositories to Learn Robotics</span>
+                            <span class="disclosure__count" data-count>15</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://github.com/ColinShaw/robotics-and-machine-vision-resources#interesting-and-relevant-articles" target="_blank" rel="noopener">Robotics Research Papers <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/Phylliade/awesome-machine-learning-robotics" target="_blank" rel="noopener">Machine Learning for Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/kiloreux/awesome-robotics" target="_blank" rel="noopener">Books, Courses &amp; Software <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/AtsushiSakai/PythonRobotics" target="_blank" rel="noopener">PythonRobotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/joshnewans/robotics_resources" target="_blank" rel="noopener">robotics_resources <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/kfupmRoboticsClub/learn-Robotics/tree/main" target="_blank" rel="noopener">Learn Robotics - Beginner, Moderate &amp; Advanced <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/gtbook/robotics" target="_blank" rel="noopener">Introduction to Robotics and Perception <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/mithi/robotics-coursework" target="_blank" rel="noopener">Robotics Courses <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/carlosmccosta/dynamic_robot_localization" target="_blank" rel="noopener">Dynamic Robot Localization <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/mathiasmantelli/awesome-mobile-robotics" target="_blank" rel="noopener">Awesome Mobile Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/addy1997/Robotics-Resources" target="_blank" rel="noopener">Robotics Resources <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/robotframework/robotframework" target="_blank" rel="noopener">Robot Framework <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/Phylliade/awesome-machine-learning-robotics" target="_blank" rel="noopener">Awesome Machine Learning for Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/ColinShaw/robotics-and-machine-vision-resources" target="_blank" rel="noopener">Robotics And Machine Vision Resources <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/kiloreux/awesome-robotics" target="_blank" rel="noopener">Awesome Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-robot disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">ROS Resources</span>
+                            <span class="disclosure__count" data-count>8</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://ocw.tudelft.nl/courses/hello-real-world-ros-robot-operating-system/" target="_blank" rel="noopener">By Delft University of Technology, Netherlands <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://rsl.ethz.ch/education-students/lectures/ros.html" target="_blank" rel="noopener">By ETH Zürich, Switzerland <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://web.ics.purdue.edu/~rvoyles/Classes/ROSprogramming/index.html" target="_blank" rel="noopener">By Purdue University, USA <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://sir.upc.edu/projects/rostutorials/" target="_blank" rel="noopener">By Universitat Politècnica de Catalunya, Barcelona <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://automatika.etf.bg.ac.rs/sr/13e054trs" target="_blank" rel="noopener">By University of Belgrade, Serbia <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/cse481sp17/cse481c/wiki" target="_blank" rel="noopener">By University of Washington, USA <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/vmayoral/ros-robotics-companies" target="_blank" rel="noopener">Companies working with ROS <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/ps-micro/awesome-ros" target="_blank" rel="noopener">awesome-ros <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-robot disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">ROS 2 Resources</span>
+                            <span class="disclosure__count" data-count>5</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://www.youtube.com/playlist?list=PLRE44FoOoKf7NzWwxt3W2taZ7BiWyfhCp" target="_blank" rel="noopener">ROS2 Tutorial for Beginners (Foxy) <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Gg25GfA456o" target="_blank" rel="noopener">ROS2 Tutorial - ROS2 Humble 2H50 [Crash Course] <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy" target="_blank" rel="noopener">ROS2 Tutorials - ROS2 Humble For Beginners <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLL57Sz4fhxLpCXgN0lvCF7aHAlRA5FoFr" target="_blank" rel="noopener">Self-Driving Cars with ROS 2 &amp; Autoware <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLNw2RD-1J5YZbyWXCpas9zPJldfphPi4Q" target="_blank" rel="noopener">ROS2 Tutorials <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fab fa-youtube disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">YouTube Channels &amp; Playlists to Learn Robotics</span>
+                            <span class="disclosure__count" data-count>21</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <h4 class="resource-group__title">Channels</h4>
+                            <ul class="resource-list">
+                                <li><a href="https://www.youtube.com/@duckietown" target="_blank" rel="noopener">Duckietown <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@LearnRobotics" target="_blank" rel="noopener">LearnRobotics by Liz Miller <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCJypzBiFE8C793Q_PC6X8IQ" target="_blank" rel="noopener">Anis Koubaa <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@ArticulatedRobotics" target="_blank" rel="noopener">ArticulatedRobotics by Articulated Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@Dronebotworkshop" target="_blank" rel="noopener">Dronebotworkshop <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@HashRobotics" target="_blank" rel="noopener">HashRobotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@jamesbruton" target="_blank" rel="noopener">James Bruton <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@mecharithm-robotics" target="_blank" rel="noopener">Mecharithm - Robotics and Mechatronics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@ROBOMECHTRIX" target="_blank" rel="noopener">Robomechtrix <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@RoboticsBackEnd" target="_blank" rel="noopener">RoboticsBackEnd <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-group">
+                            <h4 class="resource-group__title">Playlists</h4>
+                            <ul class="resource-list">
+                                <li><a href="https://www.youtube.com/playlist?list=PLdPQZLMHRjDIzO99aE7yAtdOHSVHMXfYH" target="_blank" rel="noopener">Robotics 501: Mathematics for Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLyqSpQzTE6M_XM9cvjLLO_Azt1FkgPhpH" target="_blank" rel="noopener">Introduction to Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLkx8KyIQkMfWr191lqbN8WfV08j-ui8WX" target="_blank" rel="noopener">Robotic Manipulation, Fall 2023 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/watch?v=_1CtAHVea8I&amp;list=PLkx8KyIQkMfUmB3j-DyP58ThDXM7enA8x" target="_blank" rel="noopener">Underactuated Robotics, Spring 2021 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62Bkdzwe7caTZC7soj7ZYvk" target="_blank" rel="noopener">Cognitive Robotics, Spring 2016 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLCFD85BC79FE703DF" target="_blank" rel="noopener">Robotics Institute Seminar Series <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLZnJoM76RM6ItAfZIxJYNKdaR_BobleLY" target="_blank" rel="noopener">Robot Dynamics 2022 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa" target="_blank" rel="noopener">Optimal Control 2023 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PL4847E1D1C121292F" target="_blank" rel="noopener">Introduction to Robotics Course <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx" target="_blank" rel="noopener">Modern Robotics by Northwestern University <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLbRMhDVUMngcdUbBySzyzcPiFTYWr4rV_" target="_blank" rel="noopener">Robotics by Indian Institute of Technology, Kharagpur <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-chalkboard disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">Free University Courses</span>
+                            <span class="disclosure__count" data-count>8</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://duckietown.com/mooc/" target="_blank" rel="noopener">Self-Driving Cars with Duckietown <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/" target="_blank" rel="noopener">Introduction To Robotics by Massachusetts Institute of Technology <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://robotacademy.net.au/" target="_blank" rel="noopener">QUT Robot Academy by QUT (Queensland University of Technology) <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://see.stanford.edu/Course/CS223A" target="_blank" rel="noopener">Introduction to Robotics by Stanford University <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="http://ais.informatik.uni-freiburg.de/teaching/ss16/robotics/index_en.php" target="_blank" rel="noopener">Introduction to Mobile Robotics by The University of Freiburg <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/StanfordCS235/videos" target="_blank" rel="noopener">Applied robot design by Stanford University <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://underactuated.csail.mit.edu/index.html" target="_blank" rel="noopener">Underactuated Robotics by MIT Computer Science and Artificial Intelligence Laboratory (CSAIL) <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/" target="_blank" rel="noopener">Advanced Robotics by University of California, Berkeley <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-book-open disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">Books to Learn Robotics</span>
+                            <span class="disclosure__count" data-count>6</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://reference-global.com/book/9781788474726" target="_blank" rel="noopener">ROS Robotics by Example <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.pishrobot.com/wp-content/uploads/2021/05/ros-robot-programming-book-by-turtlebo3-developers-en.pdf" target="_blank" rel="noopener">ROS Robot Programming <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/fjibj/ROSplay/blob/master/Learning%20ROS%20for%20Robotics%20Programming%20-%20Second%20Edition.pdf" target="_blank" rel="noopener">Learning ROS for Robotics Programming <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://jokane.net/agitr/agitr-letter.pdf" target="_blank" rel="noopener">A Gentle Introduction to ROS <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="http://alvarestech.com/temp/capp/GDT_Forma3D/Programming%20Robots%20with%20ROS%20by%20Morgan%20Quigley,%20Brian%20Gerkey,%20William%20D.%20Smart%20(z-lib.org).pdf" target="_blank" rel="noopener">Programming Robots with ROS <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://link.springer.com/book/10.1007/978-1-4842-7750-8" target="_blank" rel="noopener">Robot Operating System for Absolute Beginners <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h3 class="disclosure__title">
+                            <i class="fas fa-satellite-dish disclosure__icon" aria-hidden="true"></i>
+                            <span class="disclosure__label">Robotic Simulators</span>
+                            <span class="disclosure__count" data-count>21</span>
+                            <span class="sr-only">resources</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h3>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <div class="resource-group">
+                            <ul class="resource-list">
+                                <li><a href="https://github.com/duckietown/gym-duckietown" target="_blank" rel="noopener">gym-duckietown <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener">NVIDIA Isaac Sim <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://classic.gazebosim.org/" target="_blank" rel="noopener">Gazebo by Open Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://robodk.com/" target="_blank" rel="noopener">RoboDK <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://cyberbotics.com/" target="_blank" rel="noopener">Webots <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://coppeliarobotics.com/" target="_blank" rel="noopener">CoppeliaSim <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://aws.amazon.com/robomaker/" target="_blank" rel="noopener">AWS RoboMaker <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://morse-simulator.github.io/" target="_blank" rel="noopener">MORSE <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://uk.mathworks.com/products/simscape.html" target="_blank" rel="noopener">Simscape <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.algoryx.se/agx-dynamics/" target="_blank" rel="noopener">AGX Dynamics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.cenit.com/en_EN/solutions-services/software-solutions/fastsuite-edition-2.html" target="_blank" rel="noopener">Cenit FastSuite Edition 2 <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.3ds.com/products/delmia/industrial-engineering/robotics" target="_blank" rel="noopener">Dassault Systemes 3D Experience <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://openmodelica.org/" target="_blank" rel="noopener">Open Modelica <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://plm.sw.siemens.com/en-US/nx/manufacturing/robotic-machining-programming/" target="_blank" rel="noopener">Siemens Robotics <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.abb.com/global/en/areas/robotics/products/software/robotstudio-suite" target="_blank" rel="noopener">ABB Robot Studio <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://realvirtual.io/" target="_blank" rel="noopener">realvirtual.io <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.digifai.com/en/twin/" target="_blank" rel="noopener">twin <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/google-deepmind/mujoco" target="_blank" rel="noopener">mujoco <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.visualcomponents.com/" target="_blank" rel="noopener">Visual Components <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://unity.com/" target="_blank" rel="noopener">Unity <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                                <li><a href="https://easy-rob.com/" target="_blank" rel="noopener">EASY-ROB <i class="fas fa-chevron-right resource-list__chevron" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <p class="empty-state__title">No resources match '<span id="empty-term"></span>'</p>
+                <p class="empty-state__text">Try a shorter or more general keyword, such as 'ROS', 'course' or 'simulator'.</p>
+                <button class="btn btn--ghost" id="empty-clear" type="button">Clear search</button>
+            </div>
+        </section>
+
+        <section class="col-content" aria-labelledby="home-faq-title">
+            <p class="section-kicker">FAQ</p>
+            <h2 class="section-head__title" id="home-faq-title">Common questions</h2>
+            <div class="faq">
+                <details class="disclosure">
+                    <summary class="disclosure__summary"><h3 class="disclosure__title"><span class="disclosure__label">What is Get Into Robotics?</span><i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i></h3></summary>
+                    <div class="disclosure__panel"><p>Get Into Robotics is a free curated library of robotics learning resources with 99 links across 8 collections, maintained by Akshet Patel.</p></div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary"><h3 class="disclosure__title"><span class="disclosure__label">How should a beginner start learning robotics?</span><i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i></h3></summary>
+                    <div class="disclosure__panel"><p>Finish one structured course, practise in a simulator, then reproduce a documented open-source robot demo before buying hardware. Start with the <a href="guides/how-to-learn-robotics/">how-to-learn-robotics guide</a>.</p></div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary"><h3 class="disclosure__title"><span class="disclosure__label">Should I learn ROS or ROS 2 first?</span><i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i></h3></summary>
+                    <div class="disclosure__panel"><p>New learners should usually start with ROS 2. Use classic ROS materials when a course or legacy stack still depends on ROS 1.</p></div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary"><h3 class="disclosure__title"><span class="disclosure__label">Which robotic simulator should I try first?</span><i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i></h3></summary>
+                    <div class="disclosure__panel"><p>Gazebo and Webots are common starting points for ROS-centric learning. MuJoCo suits research and reinforcement learning. Isaac Sim suits high-fidelity NVIDIA workflows.</p></div>
+                </details>
+            </div>
+            <p><a href="faq/">See all frequently asked questions <i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
+        </section>
+
+        <section class="col-content trust" aria-labelledby="trust-title">
+            <div>
+                <h2 class="trust__title" id="trust-title">Why trust this library?</h2>
+                <p class="trust__body">Edited by <a href="https://akshetpatel.com/" target="_blank" rel="noopener">Akshet Patel</a>, published at getintorobotics.com, and maintained as a public list on GitHub. Original site copy uses British English. There are no affiliate book promotions on this site.</p>
+                <p class="page-hero__meta">Last reviewed 29 July 2026</p>
+            </div>
+            <ul class="trust__list">
+                <li>Independent educational directory, not a vendor storefront</li>
+                <li>Collections mapped to topic pages for clearer search intent</li>
+                <li>Contribute corrections via the <a href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">GitHub repository</a></li>
+                <li>Machine-readable summaries at <a href="/llms.txt">llms.txt</a> and <a href="/llms-full.txt">llms-full.txt</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer layout">
+        <div class="site-footer__about">
+            <p class="site-footer__brand">Get Into Robotics</p>
+            <p class="site-footer__desc">A curated library of robotics projects, courses, ROS materials, books and simulators for every level.</p>
+        </div>
+
+        <nav class="site-footer__nav--explore" aria-labelledby="footer-explore">
+            <h2 class="site-footer__heading" id="footer-explore">Explore</h2>
+                    <ul class="footer-links">
+                        <li><a href="#library">Library <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                        <li><a href="guides/how-to-learn-robotics/">Guides <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                        <li><a href="faq/">FAQ <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                        <li><a href="about/">About <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">GitHub repository <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                    </ul>
+        </nav>
+
+        <nav class="site-footer__nav--connect" aria-labelledby="footer-connect">
+            <h2 class="site-footer__heading" id="footer-connect">Connect</h2>
+            <ul class="footer-links">
+                <li><a href="https://akshetpatel.com/" target="_blank" rel="noopener">akshetpatel.com <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener">LinkedIn <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener">YouTube <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="site-footer__bottom">
+            <p class="site-footer__copy">&copy; <span id="year">2026</span> Akshet Patel. All rights reserved.</p>
+            <ul class="icon-links icon-links--footer" aria-label="Social profiles">
+                <li><a href="https://www.facebook.com/akshet.patel.14/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/akshet.patel/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Akshet9" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/akshetP" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <p class="sr-only" id="live-region" role="status"></p>
+
     <script>
-        var accordions = document.querySelectorAll(".accordion");
-        var quickLinks = document.querySelectorAll('.quick-links a[href^="#"]');
-        var quickLinkMap = {};
+    (function () {
+        "use strict";
 
-        quickLinks.forEach(function (link) {
-            quickLinkMap[link.getAttribute("href")] = link;
+        var doc = document;
+        var liveRegion = doc.getElementById("live-region");
+
+        function announce(message) {
+            if (liveRegion) {
+                liveRegion.textContent = message;
+            }
+        }
+
+        doc.getElementById("year").textContent = String(new Date().getFullYear());
+
+        /* ----------------------------------------------------------------------
+           Resource index: built before the new-tab hints are injected so the
+           hint text never becomes searchable.
+           ---------------------------------------------------------------------- */
+        var disclosures = [].slice.call(
+            doc.querySelectorAll("#disclosure-list > .disclosure")
+        );
+
+        var categories = disclosures.map(function (el) {
+            var items = [];
+
+            /* A resource is matched on its own title, its group heading and its URL,
+               so "simulator", "playlist" and "github" all behave as users expect. */
+            var groups = [].slice.call(el.querySelectorAll(".resource-group"));
+
+            groups.forEach(function (group) {
+                var heading = group.querySelector(".resource-group__title");
+                var groupText = heading ? (heading.textContent || "") : "";
+
+                [].slice.call(group.querySelectorAll(".resource-list > li")).forEach(function (li) {
+                    var link = li.querySelector("a");
+                    items.push({
+                        li: li,
+                        text: [li.textContent || "", groupText, link ? link.getAttribute("href") : ""]
+                            .join(" ")
+                            .toLowerCase()
+                    });
+                });
+            });
+
+            return {
+                el: el,
+                title: (el.querySelector(".disclosure__label").textContent || "").toLowerCase(),
+                countEl: el.querySelector("[data-count]"),
+                groups: groups,
+                items: items
+            };
         });
 
-        function setActiveQuickLink(hash) {
-            quickLinks.forEach(function (link) {
-                var isActive = link.getAttribute("href") === hash;
+        var totalResources = categories.reduce(function (sum, category) {
+            return sum + category.items.length;
+        }, 0);
 
-                link.classList.toggle("is-active", isActive);
+        categories.forEach(function (category) {
+            category.countEl.textContent = String(category.items.length);
+        });
+        doc.getElementById("total-count").textContent = String(totalResources);
 
-                if (isActive) {
-                    link.setAttribute("aria-current", "true");
-                } else {
-                    link.removeAttribute("aria-current");
-                }
-            });
-        }
-
-        accordions.forEach(function (button) {
-            button.addEventListener("click", function () {
-                var expanded = button.getAttribute("aria-expanded") === "true";
-                var panel = document.getElementById(button.getAttribute("aria-controls"));
-
-                button.setAttribute("aria-expanded", String(!expanded));
-                panel.hidden = expanded;
-            });
+        /* 3.2.5: warn screen reader users about links that open a new tab */
+        doc.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+            link.setAttribute("rel", "noopener noreferrer");
+            var hint = doc.createElement("span");
+            hint.className = "sr-only";
+            hint.textContent = " (opens in a new tab)";
+            link.appendChild(hint);
         });
 
-        if ("IntersectionObserver" in window) {
-            var sectionObserver = new IntersectionObserver(function (entries) {
-                var visibleEntry = entries
-                    .filter(function (entry) {
-                        return entry.isIntersecting;
-                    })
-                    .sort(function (entryA, entryB) {
-                        return entryB.intersectionRatio - entryA.intersectionRatio;
-                    })[0];
+        /* ----------------------------------------------------------------------
+           Primary navigation
+           ---------------------------------------------------------------------- */
+        var nav = doc.getElementById("primary-nav");
+        var navToggle = doc.getElementById("nav-toggle");
+        var navToggleIcon = navToggle.querySelector("i");
+        var wideViewport = window.matchMedia("(min-width: 48em)");
 
-                if (!visibleEntry) {
-                    return;
-                }
-
-                setActiveQuickLink("#" + visibleEntry.target.id);
-            }, {
-                threshold: [0.2, 0.4, 0.6],
-                rootMargin: "-18% 0px -55% 0px"
-            });
-
-            quickLinks.forEach(function (link) {
-                var target = document.querySelector(link.getAttribute("href"));
-
-                if (target) {
-                    sectionObserver.observe(target);
-                }
-            });
+        function setMenu(open) {
+            nav.classList.toggle("is-open", open);
+            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+            navToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+            navToggleIcon.className = open ? "fas fa-times" : "fas fa-bars";
         }
 
-        if (quickLinks.length > 0) {
-            setActiveQuickLink(quickLinks[0].getAttribute("href"));
+        navToggle.addEventListener("click", function () {
+            setMenu(!nav.classList.contains("is-open"));
+        });
+
+        nav.addEventListener("click", function (event) {
+            if (event.target.closest("a")) {
+                setMenu(false);
+            }
+        });
+
+        doc.addEventListener("click", function (event) {
+            if (!nav.classList.contains("is-open")) return;
+            if (nav.contains(event.target) || navToggle.contains(event.target)) return;
+            setMenu(false);
+        });
+
+        wideViewport.addEventListener("change", function (event) {
+            if (event.matches) setMenu(false);
+        });
+
+        /* ----------------------------------------------------------------------
+           Search / filter
+           ---------------------------------------------------------------------- */
+        var form = doc.getElementById("search-form");
+        var input = doc.getElementById("resource-search");
+        var clearBtn = doc.getElementById("search-clear");
+        var status = doc.getElementById("search-status");
+        var emptyState = doc.getElementById("empty-state");
+        var emptyTerm = doc.getElementById("empty-term");
+        var emptyClear = doc.getElementById("empty-clear");
+        var statusTimer;
+
+        function plural(count, singular, pluralForm) {
+            return count === 1 ? singular : pluralForm;
         }
+
+        function applyFilter() {
+            var query = input.value.trim().toLowerCase();
+            var matches = 0;
+            var visibleCategories = 0;
+
+            categories.forEach(function (category) {
+                /* Matching the category name keeps all of its resources in view */
+                var categoryHit = Boolean(query) && category.title.indexOf(query) !== -1;
+                var found = 0;
+
+                category.items.forEach(function (item) {
+                    var hit = !query || categoryHit || item.text.indexOf(query) !== -1;
+                    item.li.hidden = !hit;
+                    if (hit) found++;
+                });
+
+                category.groups.forEach(function (group) {
+                    group.hidden = !group.querySelector(".resource-list > li:not([hidden])");
+                });
+
+                category.countEl.textContent = String(query ? found : category.items.length);
+                category.el.hidden = Boolean(query) && found === 0;
+                category.el.open = Boolean(query) && found > 0;
+
+                if (!category.el.hidden) visibleCategories++;
+                matches += found;
+            });
+
+            clearBtn.hidden = input.value.length === 0;
+            emptyState.hidden = !(query && matches === 0);
+            emptyTerm.textContent = input.value.trim();
+
+            clearTimeout(statusTimer);
+            statusTimer = setTimeout(function () {
+                status.textContent = query
+                    ? matches + " " + plural(matches, "resource", "resources") + " in " +
+                      visibleCategories + " " + plural(visibleCategories, "category", "categories")
+                    : "";
+            }, 300);
+
+            updateToggleAll();
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var initialQuery = params.get("q");
+        if (initialQuery) {
+            input.value = initialQuery;
+            applyFilter();
+        }
+
+        input.addEventListener("input", applyFilter);
+
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && input.value) {
+                event.stopPropagation();
+                resetSearch();
+            }
+        });
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+        });
+
+        function resetSearch(focusTarget) {
+            input.value = "";
+            applyFilter();
+            (focusTarget || input).focus();
+            announce("Search cleared. Showing all " + totalResources + " resources.");
+        }
+
+        clearBtn.addEventListener("click", function () {
+            resetSearch();
+        });
+
+        emptyClear.addEventListener("click", function () {
+            resetSearch(input);
+        });
+
+        /* ----------------------------------------------------------------------
+           Expand / collapse all
+           ---------------------------------------------------------------------- */
+        var toggleAll = doc.getElementById("toggle-all");
+        var toggleAllText = toggleAll.querySelector(".toggle-all__text");
+        var toggleAllIcon = toggleAll.querySelector("i");
+
+        function updateToggleAll() {
+            var visible = disclosures.filter(function (el) { return !el.hidden; });
+            var allOpen = visible.length > 0 && visible.every(function (el) { return el.open; });
+
+            toggleAll.dataset.state = allOpen ? "open" : "closed";
+            toggleAll.disabled = visible.length === 0;
+            toggleAllText.textContent = allOpen ? "Collapse all" : "Expand all";
+            toggleAllIcon.className = allOpen ? "fas fa-chevron-up" : "fas fa-chevron-down";
+        }
+
+        toggleAll.addEventListener("click", function () {
+            var expand = toggleAll.dataset.state !== "open";
+
+            disclosures.forEach(function (el) {
+                if (!el.hidden) el.open = expand;
+            });
+
+            updateToggleAll();
+            announce(expand ? "All categories expanded." : "All categories collapsed.");
+        });
+
+        disclosures.forEach(function (el) {
+            el.addEventListener("toggle", updateToggleAll);
+        });
+
+        /* Escape closes the menu, or collapses everything while browsing */
+        doc.addEventListener("keydown", function (event) {
+            if (event.key !== "Escape") return;
+
+            if (nav.classList.contains("is-open")) {
+                setMenu(false);
+                navToggle.focus();
+            }
+        });
+
+        window.addEventListener("beforeprint", function () {
+            disclosures.forEach(function (el) {
+                if (!el.hidden) el.open = true;
+            });
+            updateToggleAll();
+        });
+
+        updateToggleAll();
+    })();
     </script>
 </body>
 </html>
