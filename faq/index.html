@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics learning questions and FAQ | Get Into Robotics</title>
+    <meta name="description" content="Answers to common questions about learning robotics, choosing ROS or ROS 2, picking simulators and using the Get Into Robotics curated library.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Akshet Patel">
+    <meta name="theme-color" content="#6b21a8">
+    <link rel="canonical" href="https://getintorobotics.com/faq/">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://getintorobotics.com/llms.txt">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Get Into Robotics">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Robotics learning questions and FAQ | Get Into Robotics">
+    <meta property="og:description" content="Answers to common questions about learning robotics, choosing ROS or ROS 2, picking simulators and using the Get Into Robotics curated library.">
+    <meta property="og:url" content="https://getintorobotics.com/faq/">
+    <meta property="og:image" content="https://getintorobotics.com/images/og-faq.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Get Into Robotics: Robotics learning questions and FAQ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robotics learning questions and FAQ | Get Into Robotics">
+    <meta name="twitter:description" content="Answers to common questions about learning robotics, choosing ROS or ROS 2, picking simulators and using the Get Into Robotics curated library.">
+    <meta name="twitter:image" content="https://getintorobotics.com/images/og-faq.png">
+    <meta name="twitter:creator" content="@Akshet9">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://getintorobotics.com/#organization",
+      "name": "Get Into Robotics",
+      "alternateName": "Robotics Resources Library",
+      "url": "https://getintorobotics.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://getintorobotics.com/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Akshet Patel",
+        "url": "https://akshetpatel.com/",
+        "sameAs": [
+          "https://github.com/akshetP",
+          "https://linkedin.com/in/akshetpatel",
+          "https://www.youtube.com/@akshetpatel",
+          "https://twitter.com/Akshet9"
+        ]
+      },
+      "sameAs": [
+        "https://github.com/akshetP/robotics-resources",
+        "https://akshetpatel.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://getintorobotics.com/#website",
+      "url": "https://getintorobotics.com/",
+      "name": "Get Into Robotics",
+      "description": "Curated robotics learning library covering projects, ROS, courses, books and simulators.",
+      "publisher": {
+        "@id": "https://getintorobotics.com/#organization"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://getintorobotics.com/faq/",
+      "url": "https://getintorobotics.com/faq/",
+      "name": "Robotics learning FAQ",
+      "description": "Answers to common questions about learning robotics, choosing ROS 2, picking simulators and using the Get Into Robotics library.",
+      "isPartOf": {
+        "@id": "https://getintorobotics.com/#website"
+      },
+      "inLanguage": "en-GB",
+      "dateModified": "2026-07-29",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Get Into Robotics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Get Into Robotics is a free curated library of robotics learning resources. It organises projects, ROS and ROS 2 materials, courses, books, YouTube playlists and simulators so learners can find a credible next step quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should a complete beginner start learning robotics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with one structured course, one simulator and one small project. The how-to-learn-robotics guide on this site recommends that sequence and links into the relevant collections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I learn ROS or ROS 2 first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New learners should usually start with ROS 2, because it is the actively developed generation of the framework. Use the ROS collection mainly when a course or legacy stack still depends on ROS 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which robotic simulator should I try first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gazebo and Webots are common starting points for ROS-centric learning. MuJoCo is popular for research and reinforcement learning. Isaac Sim is stronger when you need high-fidelity NVIDIA workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the linked books and courses free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This library prioritises resources that are freely browseable or widely used in education. Always check the destination site for licence terms, enrolment requirements or download conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is the library updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The collections are reviewed periodically and when the community reports broken links. Each topic page shows a last-updated date, and the GitHub repository tracks proposed changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I suggest a new resource?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Open an issue or pull request on the GitHub repository with the URL, a short description and the collection it belongs in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Get Into Robotics affiliated with ROS or Open Robotics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The site is an independent educational directory. Names such as ROS, Gazebo and Autoware belong to their respective organisations."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://getintorobotics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Robotics learning FAQ",
+      "item": "https://getintorobotics.com/faq/"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="layout">
+            <div class="site-header__bar">
+                <a class="brand" href="../" aria-label="Get Into Robotics home">
+                    <span class="brand__mark" aria-hidden="true"><i class="fas fa-robot" aria-hidden="true"></i></span>
+                    <span class="brand__text">Get Into Robotics</span>
+                </a>
+                <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+                    <a class="nav-link" href="../">Home</a>
+                    <a class="nav-link" href="../topics/open-source-robotics-projects/">Topics</a>
+                    <a class="nav-link" href="../guides/how-to-learn-robotics/">Guides</a>
+                    <a class="nav-link" href="../faq/" aria-current="page">FAQ</a>
+                    <a class="nav-link" href="../about/">About</a>
+                    <a class="nav-link nav-link--mobile-only" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">GitHub repository</a>
+                </nav>
+                <div class="site-header__actions">
+                    <a class="btn btn--primary" href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>Star</span>
+                    </a>
+                    <button class="btn btn--icon nav-toggle" id="nav-toggle" type="button"
+                            aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="layout" id="main" tabindex="-1">
+        <article class="col-content">
+            <ol class="breadcrumbs">
+                <li><a href="../">Home</a> <span class="breadcrumbs__sep" aria-hidden="true">/</span></li>
+                <li><span>FAQ</span></li>
+            </ol>
+            <header class="page-hero">
+                <h1 class="page-hero__title">Robotics learning FAQ</h1>
+                <p class="page-hero__lead">Short answers to the questions beginners and career changers ask most often when they start robotics.</p>
+            </header>
+            <div class="faq">
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">What is Get Into Robotics?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>Get Into Robotics is a free curated library of robotics learning resources. It organises projects, ROS and ROS 2 materials, courses, books, YouTube playlists and simulators so learners can find a credible next step quickly.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">How should a complete beginner start learning robotics?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>Start with one structured course, one simulator and one small project. The how-to-learn-robotics guide on this site recommends that sequence and links into the relevant collections.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">Should I learn ROS or ROS 2 first?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>New learners should usually start with ROS 2, because it is the actively developed generation of the framework. Use the ROS collection mainly when a course or legacy stack still depends on ROS 1.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">Which robotic simulator should I try first?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>Gazebo and Webots are common starting points for ROS-centric learning. MuJoCo is popular for research and reinforcement learning. Isaac Sim is stronger when you need high-fidelity NVIDIA workflows.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">Are the linked books and courses free?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>This library prioritises resources that are freely browseable or widely used in education. Always check the destination site for licence terms, enrolment requirements or download conditions.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">How often is the library updated?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>The collections are reviewed periodically and when the community reports broken links. Each topic page shows a last-updated date, and the GitHub repository tracks proposed changes.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">Can I suggest a new resource?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>Yes. Open an issue or pull request on the GitHub repository with the URL, a short description and the collection it belongs in.</p>
+                    </div>
+                </details>
+                <details class="disclosure">
+                    <summary class="disclosure__summary">
+                        <h2 class="disclosure__title">
+                            <span class="disclosure__label">Is Get Into Robotics affiliated with ROS or Open Robotics?</span>
+                            <i class="fas fa-chevron-down disclosure__chevron" aria-hidden="true"></i>
+                        </h2>
+                    </summary>
+                    <div class="disclosure__panel">
+                        <p>No. The site is an independent educational directory. Names such as ROS, Gazebo and Autoware belong to their respective organisations.</p>
+                    </div>
+                </details>
+            </div>
+            <p><a class="btn btn--primary" href="../guides/how-to-learn-robotics/">Continue with the learning guide</a></p>
+        </article>
+    </main>
+    <footer class="site-footer layout">
+        <div class="site-footer__about">
+            <p class="site-footer__brand">Get Into Robotics</p>
+            <p class="site-footer__desc">A curated library of robotics projects, courses, ROS materials, books and simulators for every level.</p>
+        </div>
+        <nav class="site-footer__nav--explore" aria-labelledby="footer-explore">
+            <h2 class="site-footer__heading" id="footer-explore">Explore</h2>
+            <ul class="footer-links">
+                <li><a href="../">Library <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="../guides/how-to-learn-robotics/">Guides <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="../faq/">FAQ <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="../about/">About <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <nav class="site-footer__nav--connect" aria-labelledby="footer-connect">
+            <h2 class="site-footer__heading" id="footer-connect">Connect</h2>
+            <ul class="footer-links">
+                <li><a href="https://akshetpatel.com/" target="_blank" rel="noopener">akshetpatel.com <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/akshetP/robotics-resources" target="_blank" rel="noopener">GitHub repository <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener">LinkedIn <i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <div class="site-footer__bottom">
+            <p class="site-footer__copy">&copy; <span id="year">2026</span> Akshet Patel. All rights reserved.</p>
+            <ul class="icon-links icon-links--footer" aria-label="Social profiles">
+                <li><a href="https://linkedin.com/in/akshetpatel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/@akshetpatel" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/akshetP" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Akshet9" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+    (function () {
+        var year = document.getElementById("year");
+        if (year) year.textContent = String(new Date().getFullYear());
+        var nav = document.getElementById("primary-nav");
+        var navToggle = document.getElementById("nav-toggle");
+        if (!nav || !navToggle) return;
+        var icon = navToggle.querySelector("i");
+        function setMenu(open) {
+            nav.classList.toggle("is-open", open);
+            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+            navToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+            icon.className = open ? "fas fa-times" : "fas fa-bars";
+        }
+        navToggle.addEventListener("click", function () { setMenu(!nav.classList.contains("is-open")); });
+        nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && nav.classList.contains("is-open")) { setMenu(false); navToggle.focus(); }
+        });
+        document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+            link.setAttribute("rel", "noopener noreferrer");
+            if (![...link.querySelectorAll(".sr-only")].some(function (n) { return /new tab/.test(n.textContent); })) {
+                var hint = document.createElement("span");
+                hint.className = "sr-only";
+                hint.textContent = " (opens in a new tab)";
+                link.appendChild(hint);
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

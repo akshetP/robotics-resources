@@ -1,0 +1,34 @@
+# Get Into Robotics
+
+> Get Into Robotics (getintorobotics.com) is a curated robotics learning library by Akshet Patel. It organises open-source robotics projects, learning repositories, ROS and ROS 2 materials, YouTube channels, university courses, books and robotic simulators for beginners through advanced practitioners.
+
+The site helps learners answer: where to start in robotics, which ROS or ROS 2 tutorials to follow, which simulators to try, and which university courses or books are freely available online.
+
+## Primary pages
+
+- [Home](https://getintorobotics.com/): Overview of the library, search, and all curated collections
+- [About](https://getintorobotics.com/about/): Editor, curation approach and trust information
+- [FAQ](https://getintorobotics.com/faq/): Common questions about learning robotics and using this library
+
+## Guides
+
+- [How to learn robotics](https://getintorobotics.com/guides/how-to-learn-robotics/): Practical path from fundamentals to projects
+- [Getting started with ROS 2](https://getintorobotics.com/guides/getting-started-with-ros-2/): First steps for ROS 2 learners
+
+## Topic collections
+
+- [Open-source robotics projects](https://getintorobotics.com/topics/open-source-robotics-projects/)
+- [Learning repositories](https://getintorobotics.com/topics/learning-repositories/)
+- [ROS resources](https://getintorobotics.com/topics/ros/)
+- [ROS 2 resources](https://getintorobotics.com/topics/ros-2/)
+- [YouTube channels and playlists](https://getintorobotics.com/topics/youtube-robotics/)
+- [Free university courses](https://getintorobotics.com/topics/university-courses/)
+- [Books to learn robotics](https://getintorobotics.com/topics/robotics-books/)
+- [Robotic simulators](https://getintorobotics.com/topics/robotic-simulators/)
+
+## Optional
+
+- [Full site summary for language models](https://getintorobotics.com/llms-full.txt)
+- [XML sitemap](https://getintorobotics.com/sitemap.xml)
+- [GitHub repository](https://github.com/akshetP/robotics-resources)
+- [Editor website](https://akshetpatel.com/)

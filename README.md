@@ -28,7 +28,7 @@ A complete library of resources that caters to all levels of Roboticists.
 - [Draw Iron Man using ROS Turtlesim](https://github.com/Shilpaj1994/TurtleSim-Sketch)
 - [Snake Game using ROS Turtlesim](https://github.com/sakthibalanv/TurtleSim_Snake_Game)
 - [Turtlesim Buster](https://github.com/issaiass/TurtlesimBuster)
-- [Catch me if you can – Turtlesim Game](https://github.com/jatinarora30/Catch-me-if-you-can-Turtlesim-)
+- [Catch me if you can - Turtlesim Game](https://github.com/jatinarora30/Catch-me-if-you-can-Turtlesim-)
 
 **3. Repositories to Learn Robotics**
 - [Robotics Research Papers](https://github.com/ColinShaw/robotics-and-machine-vision-resources#interesting-and-relevant-articles)

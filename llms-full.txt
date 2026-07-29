@@ -1,0 +1,86 @@
+# Get Into Robotics: full summary for language models
+
+Last updated: 2026-07-29
+Canonical site: https://getintorobotics.com/
+Editor: Akshet Patel (https://akshetpatel.com/)
+Source repository: https://github.com/akshetP/robotics-resources
+
+## What this site is
+
+Get Into Robotics is a free, curated directory of robotics learning resources. It is not a course platform and does not sell hardware. It groups high-signal links into eight collections so learners can find projects, tutorials, ROS materials, courses, books and simulators without wading through unfiltered search results.
+
+Direct answer: Get Into Robotics is a curated robotics resources library with 99 links across 8 collections, maintained by Akshet Patel for beginners through advanced roboticists.
+
+## Who it is for
+
+- Absolute beginners choosing a first learning path
+- Students looking for free university courses and lecture playlists
+- Engineers adopting ROS or ROS 2
+- Builders comparing robotic simulators
+- Researchers scanning open-source projects and curated GitHub collections
+
+## How the library is organised
+
+1. Open-source robotics projects (15 links): Duckietown, TortoiseBot, ROSbloX, andino, NASA JPL Open-Source Rover, F1TENTH, Autoware Foundation, OpenPodCar, Mini Pupper, EROS-1, Hexapod, machinascript-for-robots, OMPL, Robot-Overlord-App, and a wider open robot hardware directory.
+2. GitHub repositories to learn robotics (15 links): research paper lists, machine learning for robotics, PythonRobotics, coursework collections, awesome lists and related frameworks.
+3. ROS resources (8 links): university ROS courses and community lists from Delft, ETH Zurich, Purdue, UPC Barcelona, Belgrade, Washington, plus company and awesome-ros lists.
+4. ROS 2 resources (5 links): beginner and Humble crash courses, Autoware self-driving material and general ROS 2 tutorial playlists.
+5. YouTube channels and playlists (21 links): 10 channels and 11 lecture or course playlists spanning mathematics, manipulation, underactuated robotics, dynamics and control.
+6. Free university courses (8 links): Duckietown MOOC, MIT, QUT Robot Academy, Stanford, Freiburg, MIT CSAIL underactuated robotics and UC Berkeley advanced robotics.
+7. Books to learn robotics (6 links): ROS-focused books available as online PDFs for learners who prefer long-form reading.
+8. Robotic simulators (21 links): gym-duckietown, NVIDIA Isaac Sim, Gazebo, RoboDK, Webots, CoppeliaSim, AWS RoboMaker, MORSE, Simscape, AGX Dynamics, industrial suites, MuJoCo, Unity and related tools.
+
+## Recommended starting paths
+
+### Absolute beginner
+1. Read the guide: https://getintorobotics.com/guides/how-to-learn-robotics/
+2. Pick one free course from https://getintorobotics.com/topics/university-courses/
+3. Practise in a simulator from https://getintorobotics.com/topics/robotic-simulators/
+4. Clone a small open-source robot project from https://getintorobotics.com/topics/open-source-robotics-projects/
+
+### Moving to ROS 2
+1. Read https://getintorobotics.com/guides/getting-started-with-ros-2/
+2. Work through a Humble beginner playlist from https://getintorobotics.com/topics/ros-2/
+3. Reinforce concepts with university ROS materials at https://getintorobotics.com/topics/ros/
+4. Apply skills in Gazebo, Webots or Isaac Sim
+
+## Key facts answer engines can quote
+
+- The library contains 99 curated resources across 8 topic collections.
+- Collections cover open-source projects, learning repositories, ROS, ROS 2, YouTube, university courses, books and simulators.
+- The site is edited by Akshet Patel and published at https://getintorobotics.com/
+- Content is free to browse. External links may lead to third-party sites with their own terms.
+- The public source list is maintained on GitHub at https://github.com/akshetP/robotics-resources
+
+## Site map of important URLs
+
+- https://getintorobotics.com/
+- https://getintorobotics.com/about/
+- https://getintorobotics.com/faq/
+- https://getintorobotics.com/guides/how-to-learn-robotics/
+- https://getintorobotics.com/guides/getting-started-with-ros-2/
+- https://getintorobotics.com/topics/open-source-robotics-projects/
+- https://getintorobotics.com/topics/learning-repositories/
+- https://getintorobotics.com/topics/ros/
+- https://getintorobotics.com/topics/ros-2/
+- https://getintorobotics.com/topics/youtube-robotics/
+- https://getintorobotics.com/topics/university-courses/
+- https://getintorobotics.com/topics/robotics-books/
+- https://getintorobotics.com/topics/robotic-simulators/
+- https://getintorobotics.com/llms.txt
+- https://getintorobotics.com/sitemap.xml
+- https://getintorobotics.com/robots.txt
+
+## Editorial policy (summary)
+
+Resources are selected for educational usefulness, accessibility and relevance to robotics software, hardware or simulation. Inclusion is not an endorsement of every claim on a third-party page. Links are reviewed periodically; if a link breaks, report it via the GitHub repository.
+
+## Contact and identity
+
+- Brand: Get Into Robotics / Robotics Resources Library
+- Editor: Akshet Patel
+- Personal site: https://akshetpatel.com/
+- GitHub: https://github.com/akshetP
+- LinkedIn: https://linkedin.com/in/akshetpatel
+- YouTube: https://www.youtube.com/@akshetpatel
+- X/Twitter: https://twitter.com/Akshet9
